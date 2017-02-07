@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/authentication_tv_1"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/authentication_text_1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/authentication_tv_2"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/authentication_text_2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/authentication_tv_3"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/authentication_text_3"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/authentication_iv_front"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/authentication_iv_front" />
+
+            <TextView
+                android:id="@+id/authentication_tv_4"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="@string/authentication_text_4"
+                android:drawableLeft="@mipmap/authentication_left_image"
+                android:drawablePadding="5dp"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/authentication_iv_behind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/authentication_iv_behind" />
+
+            <TextView
+                android:id="@+id/authentication_tv_5"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/authentication_text_5"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/authentication_left_image"
+                android:drawablePadding="5dp"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:id="@+id/authentication_iv_hand"
+                android:layout_width="240dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_user_hands_idcard" />
+
+
+
+            <TextView
+                android:id="@+id/authentication_tv_6"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/authentication_text_6"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/authentication_left_image"
+                android:drawablePadding="5dp"
+                android:textSize="13sp" />
+
+
+
+            <Button
+                android:id="@+id/authentication_btn_commit"
+                style="@style/my_common_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

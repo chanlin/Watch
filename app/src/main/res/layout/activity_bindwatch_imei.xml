@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/bindwatch_imei_tv_tophint"
+        android:layout_width="wrap_content"
+        android:layout_height="60.5dp"
+        android:gravity="center"
+        android:text="@string/bindwatch_imei_hint_text"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:textSize="@dimen/edit_middle_text_size"
+        android:textColor="@color/black_text_color"/>
+
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:background="@drawable/shape_edit_text_white_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bindwatch_imei_edit"
+            style="@style/my_common_edittext"
+            android:hint="@string/bindwatch_imei_edit_hint_text"
+            android:inputType="number"
+            android:maxLength="15"
+           >
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/bindwatch_imei_iv_deletepwd"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/edit_delete_img"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bindwatch_imei_btn_bind"
+        style="@style/my_common_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/bindwatch_imei_button_text"
+        />
+
+
+</LinearLayout>

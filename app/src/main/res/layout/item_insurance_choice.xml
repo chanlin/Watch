@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_insurance_title_left"
+            style="@style/insurance_title_left_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/button_left_margin"
+            android:text="您与孩子的关系"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_meitianjiancha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_centerVertical="true"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_father"
+                style="@style/my_common_raidobutton"
+                android:checked="true"
+                android:drawablePadding="5dp"
+                android:text="爸爸" />
+
+            <RadioButton
+                android:id="@+id/radio_mother"
+                style="@style/my_common_raidobutton"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="5dp"
+                android:text="妈妈" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

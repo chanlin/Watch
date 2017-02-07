@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_unenable_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_telephone_title_name"
+            style="@style/colors_blue_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/telephone_title_left_margin"
+            android:text="@string/telephone_name" />
+
+
+        <EditText
+            android:id="@+id/tel_setting_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/telephone_names"
+            android:inputType="textEmailAddress"
+            android:maxLength="5"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black_text_color"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/bottom_unenable_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_telephone_title_phone"
+            style="@style/colors_blue_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/telephone_title_left_margin"
+            android:text="@string/telephone_number"
+            android:textColor="#00d9a8" />
+
+
+        <EditText
+            android:id="@+id/tel_setting_et_number"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/telephone_numbers"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black_text_color"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+    <!--<View style="@style/info_line_toleft" />-->
+    <View
+        android:id="@+id/v_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_unenable_bg" />
+
+</LinearLayout>

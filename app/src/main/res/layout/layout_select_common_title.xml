@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_title_height"
+    android:id="@+id/layout_title"
+    android:background="@mipmap/nav_bar">
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="@dimen/common_title_height"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:scaleType="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_left_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/title_ll_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_title_middle_text_color"
+            android:text=""
+            android:textSize="@dimen/common_title_middle_text_size" />
+
+        <ImageView
+            android:id="@+id/title_arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:src="@mipmap/title_arrow_down"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="@dimen/common_title_height"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:scaleType="center"
+
+        />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2px"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/app_color" />-->
+
+</RelativeLayout>

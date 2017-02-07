@@ -1,0 +1,63 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+repositories {
+	mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.6.0'
+}
+
+android {
+    compileSdkVersion 'android-10'
+    buildToolsVersion '23.0.3'
+
+    android {
+        defaultConfig {
+            minSdkVersion 11
+        }
+
+        lintOptions {
+            abortOnError false
+        }
+        sourceSets
+                {
+                    androidTest
+                            {
+                                res.srcDirs = ['res']
+                                assets.srcDirs = ['assets']
+                            }
+                }
+    }
+    buildTypes {
+        release {
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+        }
+    }
+}
+
+task assembleDebug(overwrite: true) {}
+
+task copyTask(type: Copy) {
+    from 'C:/Users/Administrator/Desktop/app-release_debug.apk'
+    into 'build/outputs/apk/'
+    rename {
+        'BaseApplicationTest-debug.apk'
+    }
+}
+
+assembleDebug.dependsOn copyTask

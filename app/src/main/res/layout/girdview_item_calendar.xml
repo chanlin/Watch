@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/calendar_iv_select"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/history_track__no_selected"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/calendar_iv_bg"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/history_track_selected"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/calendar_tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            style="@style/black_textview"
+            android:text="2"
+            />
+
+        <TextView
+            android:id="@+id/calendar_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

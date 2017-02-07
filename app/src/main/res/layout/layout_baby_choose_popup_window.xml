@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/baby_choose_popup_window_tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="按下切换宝贝"
+        android:layout_marginTop="64dp"
+        />
+
+
+
+    <GridView
+        android:layout_below="@+id/baby_choose_popup_window_tv_top"
+        android:id="@+id/baby_choose_popup_window_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:numColumns="2"
+        android:layout_above="@+id/btn_cancel"
+        android:scrollbars="none" >
+
+    </GridView>
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn_cancel"
+        android:layout_above="@+id/bottom_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

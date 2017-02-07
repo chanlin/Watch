@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f4"
+        >
+
+        <ImageView
+            android:id="@+id/iv_continue_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_continue_logo"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="60dp"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_continue_txt"
+            android:layout_below="@id/iv_continue_logo"
+            android:layout_marginTop="54dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="48dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_camera"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/title"
+        android:layout_height="match_parent">
+
+
+        <com.jajale.watch.thirdpart.qrcode.ZXingScannerView
+            android:id="@+id/zxingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.jajale.watch.thirdpart.qrcode.ZXingScannerView>
+        <TextView
+            android:id="@+id/qrcode_top_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qrcode_top_hint"
+            android:textSize="@dimen/edit_middle_text_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"/>
+            <ImageView
+            android:id="@+id/imageview_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/qrcode_top_hint"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/qrcode_top_image"/>
+        <TextView
+            android:id="@+id/demo"
+            android:layout_width="186dp"
+            android:layout_height="186dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:layout_marginTop="36dp"
+            />
+        <TextView
+            android:id="@+id/qrcode_bottom_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qrcode_bottom_hint"
+            android:textSize="@dimen/button_middle_text_size"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/demo"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/title"
+        android:visibility="gone"
+        android:text="摄像头权限可能已关闭，请尝试在“设置”里开启"/>
+
+</RelativeLayout>

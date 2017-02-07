@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Date: 3/23/15 12:28 PM
+  ~ @Copyright: 2015 Inc. All rights reserved.
+  ~ 注意：本内容仅限于公司内部传阅，禁止外泄以及用于其他的商业目的
+  -->
+
+<LinearLayout
+    android:background="@android:color/transparent"
+    android:padding="@dimen/footer_padding"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/footer_height"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/footer_progressbar"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="12.0sp"
+                android:textColor="@color/pull_listview_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_loading_default_hint" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:textSize="12.0sp"
+            android:textColor="@color/pull_listview_text_color"
+            android:id="@+id/footer_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer_hint_load_normal"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</LinearLayout>

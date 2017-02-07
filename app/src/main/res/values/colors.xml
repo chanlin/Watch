@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+<!--二维码扫描-->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">@color/app_color</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_border">@color/app_color</color>
+    <color name="viewfinder_border_green">#10d9ac</color>
+
+    <color name="tab_text_color_default">#7f323232</color>
+    <color name="tab_text_color_default_new">#88888888</color>
+    <color name="tab_text_color_focused">@color/app_color</color>
+    <color name="tab_text_color_focused_new">#22c148</color>
+    <color name="white">#ffffff</color>
+    <color name="white_new">#7fffffff</color>
+    <color name="black">#000000</color>
+    <color name="busy_indicator">#C0202020</color>
+    <color name="red_tab_textcolor">#D02820</color>
+    <color name="grey_tab_textcolor">#888988</color>
+    <!--<color name="app_color">#ffdd368c</color>
+        #E75848 qs
+        #DD368C tcrl
+    -->
+
+    <color name="app_color">#2fbbef</color>
+    <color name="app_color_press">#20A1D1</color>
+    <!--<color name="app_color">#ffdd368c</color>
+        #efE75848 qs
+        #EFDD368C tcrl
+    -->
+    <color name="app_title_menu_bg">#EFDD368C</color>
+    <!--
+        #2ce85848 qs
+        #2cE75848 tcrl
+    -->
+    <color name="pk_title_bg">#2cFF60CE</color>
+    <color name="edu_title_bg">#2fbbef</color>
+    <color name="light_gray">#55828282</color>
+    <color name="gray_bg">#f1f1f1</color>
+    <color name="app_bg">#F1F0F5</color>
+    <color name="default_btn_text_color">#ffffffff</color>
+    <color name="login_edittext_hint_color">#ffc8c8c8</color>
+    <color name="transparent">#00000000</color>
+    <color name="member_space_activity_bg">#ffffffff</color>
+    <color name="color_dd368c">@color/app_color</color>
+    <color name="default_activity_bg">#fff5f5f5</color>
+    <color name="login_action_area_regist_btn_text_color">@color/app_color</color>
+    <color name="color_efefef">#ffefefef</color>
+    <color name="notification_list_item_text_color">#ff666666</color>
+    <color name="login_input_area_divide_line_color">#ffd9d9d9</color>
+    <color name="personal_list_item_selector_press">#ffe8e8e8</color>
+    <color name="bottom_popup_btn_cancel_bg">#ffaaa4a6</color>
+    <color name="picker_selector_title_color">@color/app_color</color>
+    <color name="color_c2c2c2">#ffc2c2c2</color>
+    <color name="dialog_btn_text_color">#ffffffff</color>
+    <color name="default_activity_bg_space">#fff5f5f5</color>
+    <color name="member_space_user_info_text_color">#ff323232</color>
+    <color name="report_dialog_text_n">#ff828282</color>
+    <color name="gray">#ff828282</color>
+    <color name="regist_age_picker_selector_line">#ffa9a9a9</color>
+    <color name="popwindow_title_p">#ffd0cfd2</color>
+    <color name="notification_dialog_title_color">@color/app_color</color>
+    <!-- add by lizq-->
+    <color name="activity_bg_color">#fff5f5f5</color>
+    <color name="login_retrieve_password_tv_color">#ff585858</color>
+    <color name="login_edittext_text_color">#ff323232</color>
+    <color name="register_btn_login_text_color">#ff7f7f7e</color>
+    <color name="login_action_area_regist_btn_text_color_2">@color/app_color</color>
+    <color name="color_585858">#ff585858</color>
+    <color name="mail_box_lv2_centent_msg_gray">#ff636563</color>
+    <color name="mail_box_lv2_bottom_gray">#ffd6d6d6</color>
+    <color name="mail_box_tab_unselected_text_gray">#ff999999</color>
+    <color name="maile_box_tab_selected_text_gray">#ff333333</color>
+    <!--<color name="background_tab_pressed">#6633B5E5</color> -->
+    <color name="background_tab_pressed">#66ed6b15</color>
+    <color name="simple_orange">@color/app_color</color>
+    <color name="grey">#999999</color>
+    <color name="message_count_bg">@color/app_color</color>
+    <color name="interprater_pink">@color/app_color</color>
+
+    <color name="gray_normal">#666667</color>
+    <color name="rednquestions_q2_answer_text_color">#ff828282</color>
+    <color name="chat_warning_text_color">#ff7f7f7e</color>
+    <color name="chat_list_bg_gray">#f1f0f5</color>
+    <color name="silver">#c0c0c0</color><!--银色 -->
+    <color name="pull_listview_header_bg">#fff3eff1</color>
+    <color name="pull_listview_text_color">#ffa7a5a5</color>
+
+    <color name="setting_lover_woman_btn_text_color">#ffdd368c</color>
+    <color name="mail_box_tab_text_unselect">#88333333</color>
+    <color name="mail_box_tab_text_select">#333333</color>
+
+    <color name="register_step_title_text_color">#727272</color>
+    <color name="register_step_second_title_text_color">#424242</color>
+    <color name="day_recommend_greeting_title_text">#FDF6FA</color>
+    <color name="setting_item_text_gray">#2F2F2F</color>
+
+    <color name="login_splash_bg_gray">#cdcdcd</color>
+
+    <!--<<<<<<< HEAD-->
+    <color name="send_msg_text_color">#ff000000</color>
+    <!--=======-->
+    <color name="color_press">#dbdbdb</color>
+    <color name="payeco_textColorGrayTwo">#A2A2A2</color>
+    <color name="payeco_textColorWhite">#FFFFFF</color>
+    <color name="payeco_textColorBlack">#2B2B2B</color>
+    <color name="payeco_textColorYellow">#FF8C00</color>
+    <color name="payeco_textColorBlue">#6CA6CD</color>
+    <color name="payeco_titleTextColor">#1780C7</color>
+    <color name="payeco_tipsTextColor">#4A5761</color>
+    <color name="payeco_hintTextColor">#C4C4C4</color>
+    <color name="payeco_bgColor">#E8E8E8</color>
+    <color name="title_name_gray">#606060</color>
+    <color name="map_window_middle_orange">#90FFA000</color>
+
+
+    <color name="common_title_middle_text_color">#ffffff</color>
+    <color name="common_title_bg_color">#2fbbef</color>
+    <color name="get_msg_code_bg_color">#10d9ac</color>
+
+    <color name="common_button_middle_text_on_color">#ffffff</color>
+    <color name="common_button_middle_text_off_color">#888888</color>
+
+    <color name="common_edit_text_color">#888888</color>
+    <color name="gray_text_color">#888888</color>
+    <color name="black_text_color">#2a2a2a</color>
+    <color name="sms_code_text_color">#2a2a2a</color>
+    <color name="line_color">#dbdbdb</color>
+    <color name="info_left_text_blue_color">#00c6ed</color>
+    <color name="info_left_text_green_color">#00d9a8</color>
+    <color name="info_left_text_color">#2a2a2a</color>
+    <color name="info_right_text_color">#888888</color>
+    <color name="birthday_picker_selector_title_color">@color/app_color</color>
+
+    <color name="vaccine_age_list_press_color">@color/line_color</color>
+    <color name="vaccine_age_list_normal_color">#f1f0f5</color>
+    <color name="vaccine_content_state_off">#a2a2a2</color>
+    <color name="app_red">#ff4f3d</color>
+    <color name="list_item_divider_color">#dbdbdb</color>
+    <color name="list_item_system_content_color">#f04a6a</color>
+    <color name="dot_bg_color">#ff7571</color>
+    <color name="bottom_unenable_bg">#e1e1e1</color>
+    <color name="regist_age_picker_selector_title_color">@color/app_color</color>
+    <color name="health_chart_lower">#e75470</color>
+    <color name="health_chart_my">#2fbbef</color>
+    <color name="health_chart_standard">#6acb73</color>
+    <color name="health_chart_uper">#ffa000</color>
+    <color name="reader_bg">#faf6ed</color>
+
+    <color name="discover_item_bg">#1b1b1b</color>
+    <color name="fragment_discover_bottom_splash">#e0e0e0</color>
+
+    <color name="listview_separate_line_bg">#e5e5e5</color>
+    <color name="insurance_top_msg_bg">#e1f7ff</color>
+    <color name="reai_title_color">#222222</color>
+    <color name= "dialog_shaddow_balck">#88000000</color>
+    <color name="reai_sb_blue">#b7f3ff</color>
+
+    <color name="dear_text_color">#585858</color>
+
+    <color name="green_press_color">#0dc89e</color>
+    <color name="green_normal_color">#10d9ac</color>
+
+    <color name="bg_headerbar_spinner_normal">@color/transparent</color>
+    <color name="bg_headerbar_spinner_selected">#5f000000</color>
+    <color name="bg_headerbar_spinner_press">#7f000000</color>
+    <color name="gray_setting_about">#c6c7c7</color>
+    <color name="dialog_green_title_color">#00b990</color>
+    <color name="dialog_content_color">#404040</color>
+
+<!--    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>-->
+    <color name="red">#FF42DFBC</color>
+    <color name="blue">#FF44DEC3</color>
+    <color name="yellow">#FF4BDAD5</color>
+    <color name="green">#FF55D4ED</color>
+</resources>

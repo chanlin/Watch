@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/alarm_btn_add_alarm"
+        style="@style/my_common_on_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/alarm_bottom_button_text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ten_margin"/>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="14dp" >
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="上午 14:10"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_msg_time_top_margin"
+        android:layout_marginLeft="@dimen/item_msg_head_side_margin"
+        >
+        <!-- 接收方头像 -->
+        <!-- android:layout_marginLeft="@dimen/item_msg_time_top_margin"-->
+        <RelativeLayout
+            android:id="@+id/rl_user_head"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:scaleType="fitXY"
+            >
+            <com.jajale.watch.cviews.RoundedImageView
+                android:id="@+id/nriv_userhead"
+                android:layout_width="@dimen/size_avatar"
+                android:layout_height="@dimen/size_avatar"
+                app:corner_radius="90dip"
+                app:border_width="1px"
+                app:border_color="@color/white"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:maxWidth="225.0dip"
+            android:id="@+id/tv_chatcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/item_msg_head_content_size"
+            android:layout_marginTop="@dimen/item_msg_content_top_margin"
+            android:layout_toRightOf="@id/rl_user_head"
+            android:background="@drawable/selector_chat_from_item_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/chat_msg_text_size"
+            android:text="这个是消息内容"
+            android:drawableLeft="@mipmap/icon_battery_warning"
+            android:drawablePadding="10dp"
+            android:paddingRight="12dp"
+            />
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_msg_between_size"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_chatcontent"
+            android:layout_below="@id/rl_user_head"
+            android:text=""
+            />
+    </RelativeLayout>
+
+</LinearLayout>

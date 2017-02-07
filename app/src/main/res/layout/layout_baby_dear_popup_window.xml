@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/layout_baby_dear_popup_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/baby_choose_popup_window_tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="按下头像切换宝贝"
+        android:layout_marginTop="17dp"
+        />
+
+
+
+    <GridView
+        android:layout_below="@+id/baby_choose_popup_window_tv_top"
+        android:id="@+id/baby_choose_popup_window_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:numColumns="2"
+        android:layout_above="@+id/btn_cancel"
+        android:paddingBottom="50dp"
+        android:scrollbars="none" >
+
+    </GridView>
+
+
+
+</RelativeLayout>

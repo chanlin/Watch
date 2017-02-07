@@ -1,0 +1,92 @@
+package com.jajale.watch.dialog;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.jajale.watch.R;
+import com.jajale.watch.listener.SimpleClickListener;
+
+/**
+ * Created by athena on 2015/11/20.
+ * Email: lizhiqiang@bjjajale.com
+ */
+public class SingleChoiceDialog extends Dialog implements View.OnClickListener {
+
+    private SimpleClickListener sClickListener;
+    private String dialogTitle = "" ; //dialog 标题
+    private CharSequence bodyUp = "" ; // dialog文本1
+    private CharSequence bodyDown = "";// dialog文本2
+    private String leftBtn = "" ;// 左按钮描述
+//    private String rightBtn = "";// 右按钮描述
+//    private int laytouID = -1;
+//    private int type ;
+
+    public SingleChoiceDialog(Context context, String title, CharSequence bodyUp, CharSequence bodyDown, String leftBtn, SimpleClickListener listener){
+        super(context);
+//        this.mContext = context ;
+        this.sClickListener = listener;
+        this.dialogTitle = title;
+        this.bodyUp = bodyUp;
+        this.bodyDown = bodyDown;
+        this.leftBtn = leftBtn;
+//        this.rightBtn = rightBtn;
+//        this.type = type ;
+
+        int layoutId = R.layout.dialog_single_choice_no_title;
+        setContentView(layoutId);
+        Window window = getWindow();
+        WindowManager.LayoutParams params = window.getAttributes();
+        params.gravity = Gravity.CENTER;
+        window.setBackgroundDrawableResource(android.R.color.transparent);
+        window.setAttributes(params);
+        setCanceledOnTouchOutside(false);
+    }
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        ((TextView)findViewById(R.id.tv_dialog_title)).setText(dialogTitle);
+        ((TextView)findViewById(R.id.dialog_body_up)).setText(bodyUp);
+        if (bodyDown.equals("")){
+            findViewById(R.id.dialog_body_bottom).setVisibility(View.GONE);
+        }else{
+            ((TextView)findViewById(R.id.dialog_body_bottom)).setText(bodyDown);
+        }
+
+
+        ((Button)findViewById(R.id.btn_ok)).setText(leftBtn);
+        findViewById(R.id.btn_ok).setOnClickListener(this);
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_cancel:
+                dismiss();
+                if (sClickListener != null) {
+                    sClickListener.cancle();
+                }
+                break;
+            case R.id.btn_ok:
+                dismiss();
+                if (sClickListener != null) {
+                    sClickListener.ok();
+                }
+                break;
+        }
+    }
+
+
+}

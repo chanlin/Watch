@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <View
+            style="@style/info_line_match"
+            />
+
+        <RelativeLayout
+            android:id="@+id/bady_info_rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector">
+
+            <TextView
+                style="@style/info_textview_left"
+                android:text="@string/baby_info_head_text" />
+
+            <ImageView
+                android:id="@+id/body_info_head_image"
+                android:layout_width="@dimen/head_image_width"
+                android:layout_height="@dimen/head_image_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33dp"
+                android:src="@mipmap/head_image_boy" />
+        </RelativeLayout>
+
+        <View style="@style/info_line_toleft" />
+
+
+        <RelativeLayout
+            android:id="@+id/bady_info_rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector">
+            <TextView
+                style="@style/info_textview_left"
+                android:text="@string/baby_info_name_text" />
+            <TextView
+                android:id="@+id/bady_info_tv_name"
+                style="@style/gray_textview"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/tonext_iv"
+                android:text="@string/baby_info_hint" />
+            <ImageView
+                android:id="@+id/tonext_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_right_margin"
+                android:src="@mipmap/tonext_img" />
+        </RelativeLayout>
+
+        <View style="@style/info_line_toleft" />
+
+        <RelativeLayout
+            android:id="@+id/bady_info_rl_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/info_textview_left"
+                android:text="@string/baby_info_sex_text" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_meitianjiancha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_boy"
+                    style="@style/my_common_raidobutton"
+                    android:checked="true"
+                    android:drawablePadding="5dp"
+                    android:text="@string/baby_info_boy"/>
+                <RadioButton
+                    android:id="@+id/radio_girl"
+                    style="@style/my_common_raidobutton"
+                    android:layout_marginLeft="20dp"
+                    android:drawablePadding="5dp"
+                    android:text="@string/baby_info_girl"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <View style="@style/info_line_toleft" />
+
+        <RelativeLayout
+            android:id="@+id/bady_info_rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/info_textview_left"
+                android:text="@string/baby_info_phone_text" />
+
+            <TextView
+                android:id="@+id/bady_info_tv_phone"
+                style="@style/info_textview_right"
+                android:text="@string/baby_info_hint" />
+        </RelativeLayout>
+
+        <View style="@style/info_line_toleft" />
+
+
+        <RelativeLayout
+            android:id="@+id/bady_info_rl_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/info_textview_left"
+                android:text="@string/baby_info_birthday_text" />
+
+            <TextView
+                android:id="@+id/bady_info_tv_birthday"
+                style="@style/info_textview_right"
+                android:text="@string/baby_info_hint" />
+        </RelativeLayout>
+
+        <!--<View style="@style/info_line_match" />-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bady_info_btn_next"
+        style="@style/my_common_button"
+        android:layout_marginTop="30dp"
+        android:text="@string/save" />
+    <Button
+        android:id="@+id/watch_tools_btn_remove_bind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:layout_marginTop="@dimen/bind_top_margin"
+        android:background="@drawable/button_white_selector"
+        android:text="@string/dear_button_release_bound"
+        android:textColor="@color/app_red"
+        android:textSize="18sp" />
+
+</LinearLayout>

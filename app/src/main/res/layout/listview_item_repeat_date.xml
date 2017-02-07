@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_selector">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/repeat_tv_week"
+            style="@style/info_textview_left"
+            android:textSize="15sp"
+            android:text="@string/monday" />
+
+
+        <ImageView
+            android:id="@+id/repeat_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:button="@null"
+            android:checked="false"
+            android:focusable="false"
+            android:enabled="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

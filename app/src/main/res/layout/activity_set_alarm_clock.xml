@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dbdbdb" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dbdbdb" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/line_color" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="#ffa000" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <com.jajale.watch.cviews.AlarmPickerView
+                android:id="@+id/number_picker_period"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <com.jajale.watch.cviews.AlarmPickerView
+                android:id="@+id/number_picker_hour"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffa000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hour"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv2"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffa000"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:background="@color/line_color" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <com.jajale.watch.cviews.AlarmPickerView
+                android:id="@+id/number_picker_minute"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffa000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minute"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv3"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffa000"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/alarm_rl_set_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baby_info_height"
+        android:layout_marginTop="@dimen/bind_top_margin"
+        android:background="@drawable/item_selector">
+
+
+        <TextView
+            style="@style/info_textview_left"
+            android:text="@string/alarm_repeat" />
+
+        <TextView
+            android:id="@+id/set_alarm_tv_repeat"
+            style="@style/info_textview_right"
+            android:layout_toLeftOf="@+id/iv_tonext"
+            android:text="@string/no_repeat"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tonext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_right_margin"
+            android:src="@mipmap/tonext_img" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baby_info_height"
+        android:background="@color/white">
+
+
+        <TextView
+            style="@style/info_textview_left"
+            android:text="@string/remind_to" />
+
+        <TextView
+            android:id="@+id/set_alarm_tv_baby_name"
+            style="@style/info_textview_right"
+            android:layout_toLeftOf="@+id/dear_iv_tonext"
+            android:text="@string/dear_title_text" />
+
+        <ImageView
+            android:id="@+id/dear_iv_tonext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_right_margin"
+            android:src="@mipmap/tonext_img"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

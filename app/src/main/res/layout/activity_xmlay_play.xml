@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/sound_cover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/sound_cover"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/control_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/pre_sound_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#0000"
+                    android:src="@drawable/pre_icon_transparent_normal"
+                    android:scaleType="fitCenter" />
+
+                <ImageButton
+                    android:id="@+id/play_or_pause_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/pre_sound_btn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/pre_sound_btn"
+                    android:src="@drawable/xmly_play_selector"
+                    android:background="#0000"
+                    android:scaleType="fitCenter" />
+
+                <ImageButton
+                    android:id="@+id/next_sound_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/play_or_pause_btn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/play_or_pause_btn"
+                    android:src="@drawable/next_icon_transparent_normal"
+                    android:background="#0000"
+                    android:scaleType="fitCenter" />
+
+
+            </LinearLayout>
+        <TextView
+            android:id="@+id/current_title_tv"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/control_ll"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#2c965e"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:text="正在播放的音乐"
+            />
+        </LinearLayout>
+
+    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/current_title_tv"
+                android:layout_toRightOf="@+id/sound_cover"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/current_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/reai_title_color"
+                    android:textSize="11sp"
+                    android:layout_marginRight="1dp"
+                    />
+
+                <SeekBar
+                    android:id="@+id/progress_sb"
+                    android:layout_width="210dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="5dp"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:thumb="@drawable/btn_progress"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:id="@+id/all_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05:21"
+                    android:textColor="@color/reai_title_color"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="1dp"
+                    />
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dotted_line_gray"
+            android:layerType="software" />
+
+        <com.jajale.watch.cviews.PullRefreshListView
+            android:id="@+id/program_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:listSelector="@color/transparent"
+            android:divider="@null">
+        </com.jajale.watch.cviews.PullRefreshListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="听一听资源来自于"
+            android:textColor="@color/black_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喜马拉雅FM"
+            android:textColor="#f00"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

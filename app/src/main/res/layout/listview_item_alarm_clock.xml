@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/item_selector"
+        >
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_color"
+            />
+        <TextView
+            android:id="@+id/alarm_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text_color"
+            android:layout_marginLeft="@dimen/button_left_margin"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+        
+        <View
+            android:id="@+id/line1"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/ten_margin"
+            android:background="@color/line_color"
+            android:layout_toRightOf="@+id/alarm_tv_time"
+            />
+        <TextView
+            android:id="@+id/alarm_tv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text_color"
+            android:layout_toRightOf="@+id/line1"
+            android:layout_centerVertical="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:id="@+id/alarm_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:button="@null"
+            android:checked="false"
+            android:focusable="false"
+            android:enabled="true" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/login_tv_tophint"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/ten_margin"
+        android:gravity="center_vertical"
+        android:text="@string/login_top_hint_text"
+        android:textColor="@color/gray_text_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:background="@drawable/shape_edit_text_white_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            style="@style/my_common_edittext"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:hint="@string/login_edit_hint_text"
+            android:inputType="textPassword"
+
+            android:maxLength="16">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_iv_deletepwd"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/edit_delete_img"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_btn_login"
+        style="@style/my_common_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_button_text" />
+
+    <TextView
+        android:id="@+id/login_tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/ten_margin"
+        android:text="@string/login_tv_forget"
+        android:textColor="@color/black_text_color" />
+
+</LinearLayout>

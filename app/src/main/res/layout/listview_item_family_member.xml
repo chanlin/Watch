@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/ten_margin"
+        android:layout_alignParentTop="true"
+        android:background="@color/line_color"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal"
+       android:background="@drawable/item_selector"
+       android:gravity="center_vertical">
+
+
+
+       <ImageView
+           android:id="@+id/family_member_iv_head"
+           android:layout_width="@dimen/head_image_width"
+           android:layout_height="@dimen/head_image_width"
+           android:src="@mipmap/head_image_other"
+           android:layout_marginLeft="@dimen/button_left_margin"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/family_member_iv_name"
+             style="@style/info_textview_left"
+               android:text="@string/dear_title_text"/>
+           <TextView
+               android:id="@+id/family_member_iv_phone"
+               style="@style/info_textview_right"
+               android:layout_marginLeft="@dimen/button_left_margin"
+               android:layout_marginTop="5dp"
+               android:text="@string/dear_title_notelephone"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+
+
+
+</LinearLayout>

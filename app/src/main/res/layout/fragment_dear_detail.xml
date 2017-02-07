@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dear_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_select_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ScrollView
+        android:id="@+id/dearScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_baby_root"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:background="@mipmap/rl_baby_bg">
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="40dp"-->
+                <ImageView
+                    android:id="@+id/dear_head_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/dear_deatil_boy_head_view_selector" />
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_below="@+id/dear_head_view"-->
+                <TextView
+                    android:id="@+id/dear_tv_name"
+                    style="@style/black_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dear_head_view"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="16dp"
+                    android:text="baby"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/dear_iv_battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dear_tv_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/dear_head_view"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/tonext_img"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <include
+                        android:id="@+id/watch_tools_alarm"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/watch_tools_alarm_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent" />
+
+                    <include
+                        android:id="@+id/watch_tools_find_watch"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+                    <ImageView
+                        android:id="@+id/watch_tools_find_watch_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+
+                    <include
+                        android:id="@+id/watch_tools_not_disturb"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/watch_tools_not_disturb_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+
+                    <include
+                        android:id="@+id/watch_tools_find_location"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <include
+                        android:id="@+id/watch_tools_family"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/watch_tools_family_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+
+                    <include
+                        android:id="@+id/watch_tools_telophone"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/watch_tools_telophone_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+
+                    <include
+                        android:id="@+id/watch_tools_sos"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/watch_tools_sos_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+
+                    <include
+                        android:id="@+id/watch_tools_remote_shutdown"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <include
+                        android:id="@+id/watch_tools_pedometer"
+                        layout="@layout/layout_watch_tools_item_new"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/watch_tools_pedometer_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+
+                    <!--教育 -->
+                    <!--<include-->
+                        <!--android:id="@+id/watch_tools_education"-->
+                        <!--layout="@layout/layout_watch_tools_item_new"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1" />-->
+
+                    <ImageView
+                        android:id="@+id/watch_tools_education_iv"
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+                    <!--保险 -->
+                    <!--<include-->
+                        <!--android:id="@+id/watch_tools_insurance"-->
+                        <!--layout="@layout/layout_watch_tools_item_new"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1" />-->
+
+                    <ImageView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/transparent" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/watch_tools_btn_remove_bind"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/button_left_margin"
+                android:layout_marginRight="@dimen/button_right_margin"
+                android:layout_marginTop="@dimen/bind_top_margin"
+                android:background="@drawable/button_white_selector"
+                android:text="@string/dear_button_release_bound"
+                android:textColor="@color/app_red"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ten_margin" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

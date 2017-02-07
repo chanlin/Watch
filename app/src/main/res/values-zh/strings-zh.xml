@@ -1,0 +1,528 @@
+<resources>
+    <string name="weather_live">实时</string>
+    <string name="weather_forecast">预报</string>
+    <string name="map_2d">2D平面图</string>
+    <string name="map_3d">3D俯视图</string>
+    <string name="map_satellite">卫星图</string>
+
+    <string name="base_station_location">基站定位</string>
+    <string name="gps_location">GPS定位</string>
+    <string name="wifi_location">WIFI定位</string>
+
+    <string name="app_name">华英智联儿童星</string>
+    <string name="action_settings">设置</string>
+    <!--二维码扫描-->
+    <integer name="viewfinder_border_width">4</integer>
+    <integer name="viewfinder_border_length">30</integer>
+    <string name="qrcode_top_hint">扫描手表背面的二维码</string>
+    <string name="qrcode_bottom_hint">请将手表二维码置于方框内</string>
+
+    <string name="loading_text">正在加载...</string>
+    <!-- tab 标签 -->
+    <string name="function_name_position">定位</string>
+    <string name="function_name_msg">消息</string>
+    <string name="function_name_helthy">健康</string>
+    <string name="function_name_discover">发现</string>
+    <string name="function_name_dear">宝贝</string>
+    <!--首页-->
+    <string name="homepage_button_text">加入华英智联</string>
+    <string name="homepage_button_text_new">进入华英智联</string>
+    <!--注册-->
+    <string name="register_button_text">完成注册</string>
+    <string name="register_top_text">为方便您与宝贝的沟通，请验证您的手机号</string>
+    <string name="get_sms_code">获取验证码</string>
+    <string name="again_sms_code">重发验证码</string>
+    <string name="register_title_text">注册</string>
+    <!--绑定手表-->
+    <string name="bindwatch_title_text">添加手表</string>
+    <string name="bindwatch_qrcode_text">扫码绑定</string>
+    <string name="bindwatch_imei_text">IMEI号绑定</string>
+    <string name="bindwatch_hint_text">绑定前请确认手表已开机</string>
+    <string name="bindwatch_imei_hint_text">注：绑定号是手表背面的15个数字</string>
+    <string name="bindwatch_imei_edit_hint_text">请输入IMEI绑定号</string>
+    <string name="bindwatch_imei_button_text">绑定</string>
+    <!--登录-->
+    <string name="login_button_text">登录</string>
+    <string name="login_top_hint_text">您已是注册用户，请直接登录</string>
+    <string name="login_edit_hint_text">请填写6~16位数字或字母</string>
+    <string name="login_tv_forget">忘记密码?</string>
+    <!--重置密码-->
+    <string name="reset_pwd_button_text">登录</string>
+    <string name="reset_pwd_top_text">验证码已发送到...</string>
+    <string name="reset_pwd_title_text">重置密码</string>
+    <string name="reset_pwd_edit_hint_text">输入6~16位新密码</string>
+    <string name="reset_pwd_sms_code">重发验证码</string>
+    <string name="reset_pwd_and_login">重置密码并登录</string>
+
+    <!--和宝贝关系-->
+    <string name="family_select_title_text">您和宝贝的关系</string>
+    <!--宝贝信息-->
+    <string name="baby_info_title_text">宝贝信息</string>
+    <string name="baby_info_head_text">头像</string>
+    <string name="baby_info_name_text">昵称</string>
+    <string name="baby_info_sex_text">性别</string>
+    <string name="baby_info_phone_text">手表号码</string>
+    <string name="baby_info_birthday_text">出生日期</string>
+    <string name="dear_title_notelephone">未添加电话</string>
+    <!--定位-->
+    <string name="map_call_phone_button_text">打电话</string>
+    <string name="map_navigation_button_text">导航</string>
+    <string name="map_monitor_button_text">聆听</string>
+    <!--疫苗-->
+    <string name="vaccine_title_text">宝贝1的疫苗接种情况</string>
+    <string name="vaccine_detail_state">接种状态</string>
+    <string name="vaccine_detail_date">接种日期</string>
+    <string name="vaccine_detail_describe">疫苗介绍</string>
+    <!--宝贝-->
+    <string name="dear_text_insurance">保险</string>
+    <string name="dear_text_education">教育</string>
+    <string name="dear_text_expect">敬请期待</string>
+    <string name="dear_button_release_bound">解除绑定</string>
+    <string name="dear_title_text">宝贝</string>
+    <!--闹钟-->
+    <string name="alarm_title_text">闹钟</string>
+    <string name="alarm_bottom_button_text">添加新闹钟</string>
+    <string name="alarm_set_alarm">编辑闹钟</string>
+    <string name="alarm_repeat">重复</string>
+    <string name="everyday">每天</string>
+    <string name="no_repeat">不重复</string>
+    <string name="week">周</string>
+    <string name="remind_to">提醒给</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="morning">上午</string>
+    <string name="afternoon">下午</string>
+    <!--家庭成员-->
+    <string name="family_member_title_text">家庭成员</string>
+    <string name="family_member_baby_text">宝贝</string>
+    <string name="family_member_parents_text">家长</string>
+    <string name="family_member_button_bottom">添加新家长</string>
+
+    <string name="family_member_button_text1">编辑关系或名称</string>
+    <string name="family_member_button_text2">设为管理员</string>
+    <string name="family_member_button_text3">删除联系人</string>
+    <!--免打扰-->
+    <string name="not_disturb_title_text">手表免打扰时段</string>
+    <string name="not_disturb_set_disturb">编辑免打扰时段</string>
+    <string name="not_disturb_start_time">开始时间</string>
+    <string name="not_disturb_end_time">结束时间</string>
+    <!--定位模式-->
+    <string name="location_mode_title_text">定位模式</string>
+    <string name="location_mode_low">省电模式</string>
+    <string name="location_mode_mid">正常模式</string>
+    <string name="location_mode_high">高频模式</string>
+    <string name="location_mode_explain_low">定位频率低</string>
+    <string name="location_mode_explain_mid">定位频率正常</string>
+    <string name="location_mode_explain_high">定位频率高</string>
+
+    <!--添加新家长-->
+    <string name="add_family_member_text1">新家长加入家庭方法如下：</string>
+    <string name="add_family_member_text2">扫描下面二维码</string>
+    <string name="add_family_member_text3">手动输入IMEI码</string>
+    <string name="add_family_member_title_text">添加新家长</string>
+
+    <!-- 消息列表 -->
+    <string name="msg_system_list_title">系统消息</string>
+
+    <!--保险-->
+    <string name="insurance_title_text">儿童意外、重疾综合保险方案</string>
+    <string name="insurance_first_text_1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;本保险由中国大地财产保险股份有限公司营业部承保；深圳市华英智联通信技术有限公司已为您出资支付了本保险的保险费，无需您再支付保险费。</string>
+    <string name="insurance_first_text_2">&#160;&#160;&#160;&#160;&#160;&#160;&#160;如您为宝贝的监护人且同意领取该保险，请点击立即投保录入保险信息。</string>
+    <string name="insurance_first_text_3">投保年龄：3-14周岁</string>
+    <string name="insurance_first_text_4">保险期间：1年；孩子身体健康</string>
+    <string name="insurance_second_text_title">保险方案：</string>
+    <string name="insurance_second_text_content_up">1、投保时年龄在三周岁至十四周岁间（含）,身体健康，能正常生活的儿童，可作为被保险人；</string>
+    <string name="insurance_second_text_content_mid">2、保险期间：1年；宝贝身体健康保险期间以保险公司出具的保险单上列明的期间为准。</string>
+    <string name="insurance_second_text_content_bottom">3、一份保险保障包括以下：</string>
+
+    <string name="insurance_describe_top">如投保前儿童已患有所列12种重大疾病或患有与所列重大疾病有直接因果关系的疾病，请不要投保，否则不能得到理赔；</string>
+    <string name="insurance_describe_mid">每一儿童使用一个或一个以上手机、手表产品的，保险公司对同一被保险人承担的保险责任以一份为限，超过部分不承担保险责任。</string>
+    <string name="insurance_describe_uper">上述保险责任及保险金额属于条款中的部分内容，如有冲突，以本方案为准；条款中的其它保险责任不适用于本保险。</string>
+    <string name="insurance_describe_bottom">除外责任及未尽事项以条款为准。</string>
+
+    <string name="insurance_content_t_1">＊保险期间以保险公司出具的保险单为准。</string>
+
+    <string name="insurance_describe_get_confirm">如您是儿童的监护人且同意领取该保险，请点击“立即投保”</string>
+
+    <string name="insurance_first_button_text">立即投保</string>
+    <string name="insurance_complete_title">您的投保已完成</string>
+    <string name="insurance_complete_date_des_top">保单详情可在10个工作日后登录中国大地官方</string>
+    <string name="insurance_complete_date_des_bottom">网站或拨打热线电话进行查询</string>
+    <string name="insurance_complete_report_title">全国客户服务及理赔报案电话：</string>
+    <string name="insurance_complete_report_number">95590</string>
+    <string name="insurance_complete_title_dadi">大地官网</string>
+    <string name="insurance_complete_title_dadi_link_title">＊大地官网链接：</string>
+    <string name="insurance_complete_dadi_link_content">www.95590.cn</string>
+
+    <!--编辑保险信息-->
+    <string name="edit_insurance_text_parent_info">投保人信息</string>
+    <string name="edit_insurance_text_baby_info">儿童(被保险人)信息</string>
+    <string name="edit_insurance_text_baby_info2">投保年龄为3-14周岁</string>
+    <string name="edit_insurance_button_text">确认并投保</string>
+    <!--系统设置-->
+    <string name="system_setting_title_text">系统设置</string>
+    <string name="system_setting_button_logoff">退出登录</string>
+    <string name="system_setting_feedback">意见反馈</string>
+    <string name="system_setting_question">使用说明</string>
+    <string name="system_setting_app_update">检查更新</string>
+    <string name="system_setting_app_about">关于华英智联</string>
+    <!--意见反馈-->
+    <string name="feedback_title_text">意见反馈</string>
+    <string name="feedback_edit_text_hint">请输入您的意见或建议</string>
+
+    <!--sos-->
+    <string name="sos_setting_title_text">SOS设置</string>
+    <string name="sos_setting_hint_top">您可以设置三个SOS紧急联系人</string>
+
+    <!--教育-->
+    <string name="education">教育</string>
+
+    <!--安全围栏-->
+    <string name="save_fence">安全围栏</string>
+    <string name="save_edit_fence">编辑安全围栏</string>
+    <string name="save_fence_set">设置宝贝的活动区域</string>
+    <string name="save_fence_hint">当宝贝到达或离开时，您将收到宝贝的通知提示</string>
+    <!--实名认证-->
+    <string name="authentication_title">实名认证</string>
+    <string name="authentication_text_1">您的手表使用的是联通套餐，需要进行实名认证，才能正常使用。</string>
+    <string name="authentication_text_2">1.手表与联通卡脱离超过3天，将停止联通服务。</string>
+    <string name="authentication_text_3">2. 需上传真实身份证，我们将在24小时之内完成审核。</string>
+    <string name="authentication_text_4">拍照时请确保姓名、证件号码等信息清晰可见</string>
+    <string name="authentication_text_5">拍照时请确保签发机关、有效期限等信息清晰可见</string>
+    <string name="authentication_text_6">请上传本人手持身份证照片，保证人像五官和身份证照片清晰可见</string>
+
+
+    <string name="authentication_text_hint">身份证信息审核中，请耐心等待</string>
+
+    <!--历史轨迹-->
+    <string name="history_track_title">历史轨迹</string>
+    <string name="history_track_play">播放轨迹</string>
+    <!-- Dialog -->
+    <string name="input_nickname_hint">限制2-7个字 禁止使用非法昵称</string>
+    <string name="str_ok">确定</string>
+    <string name="dialog_birthday_selector_title">生日</string>
+    <string name="grow_record">成长记录</string>
+    <string name="grow_height_curve">身高曲线</string>
+    <string name="grow_weight_curve">体重曲线</string>
+
+    <string name="debug_version_name">1.0.0</string>
+
+    <string name="title_add_grow_record">增加生长记录</string>
+    <string name="title_modify_grow_record">修改生长记录</string>
+    <string name="save">保存</string>
+    <string name="limit_numbers">0123456789.</string>
+
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="promote_center_text_waite">您的消息已发出，请耐心等待</string>
+    <string name="str_send">发送</string>
+
+    <string name="str_home_title">居住地</string>
+
+
+    <string name="str_take_picture">拍照上传</string>
+    <string name="str_local_picture">本地图片上传</string>
+
+    <string name="str_notification_title"></string>
+    <string name="str_notification_content"></string>
+
+    <string name="cannot_open_file_Path">无法打开文件: %1$s</string>
+    <string name="no_media_warning">Storage media not present</string>
+    <string name="no_media_hint">Sharing the storage media with a PC can make it inaccessible</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_backwards">Search backwards</string>
+    <string name="search_forwards">Search forwards</string>
+    <string name="search_document">Search document</string>
+    <string name="picker_title_App_Ver_Dir">%1$s %2$s: %3$s</string>
+    <string name="outline_title">Table of Contents</string>
+    <string name="enter_password">Enter password</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching&#8230;</string>
+    <string name="toggle_links">Highlight and enable links</string>
+    <string name="no_further_occurrences_found">No further occurrences found</string>
+    <string name="select">Select</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="strike_out">Strike-out</string>
+    <string name="delete">Delete</string>
+    <string name="highlight">Highlight</string>
+    <string name="underline">Underline</string>
+    <string name="edit_annotations">Edit annotations</string>
+    <string name="ink">Ink</string>
+    <string name="print">Print</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="parent_directory">[Up one level]</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="entering_reflow_mode">Entering reflow mode</string>
+    <string name="leaving_reflow_mode">Leaving reflow mode</string>
+    <string name="print_failed">Print failed</string>
+    <string name="select_text">Select text</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="no_text_selected">No text selected</string>
+    <string name="draw_annotation">Draw annotation</string>
+    <string name="nothing_to_save">Nothing to save</string>
+    <string name="document_has_changes_save_them_">Document has changes. Save them?</string>
+    <string name="cannot_open_document">Cannot open document</string>
+    <string name="cannot_open_document_Reason">Cannot open document: %1$s</string>
+    <string name="cannot_open_buffer">Cannot open buffer</string>
+    <string name="fill_out_text_field">Fill out text field</string>
+    <string name="okay">Okay</string>
+    <string name="choose_value">Choose value</string>
+    <string name="not_supported">Not supported</string>
+    <string name="copy_text_to_the_clipboard">Copy text to the clipboard</string>
+    <string name="more">More</string>
+    <string name="accept">Accept</string>
+    <string name="copy_text">copy text</string>
+    <string name="format_currently_not_supported">Format currently not supported</string>
+    <string name="toggle_reflow_mode">Toggle reflow mode</string>
+
+    <!--电话薄-->
+    <string name="telephone_setting_title_text">手表电话薄</string>
+    <string name="telephone_setting_hint_top">您可以添加10个电话薄联系人</string>
+
+
+
+
+    <string name="str_loading_default_hint">努力加载中…</string>
+    <string name="footer_hint_load_normal">查看更多</string>
+    <string name="footer_hint_load_no_more">以上是全部数据</string>
+
+
+    <string name="send_code_success">指令发送成功！</string>
+    <string name="send_code_success2">指令发送成功！</string>
+
+    <string name="insurance_top_msg_warning">中国公民请填写身份证，军人可以使用军官证，未按规定正确填写的不予通过</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博发起的请求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客户端请求消息失败</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>
+
+    <string name="dahebao_zhaomu_des">大河报小记者是《大河报》针对中小学生设立的
+先进性组织，通过参加各种社会实践活动丰富孩
+子们的课余文化生活，提高其综合素质。</string>
+
+    <string name="watch_code_http_save_success">保存成功，手表同步中</string>
+    <string name="watch_code_socket_save_success">设置成功</string>
+
+    <string name="dhb_title">大河报小记者</string>
+
+    <string name="item_des_grows">成长</string>
+    <string name="item_des_expect">期待</string>
+    <string name="item_des_vaccine">疫苗</string>
+
+    <string name="item_separate_infomation">资讯</string>
+
+
+    <string name="weather_title_text">天气</string>
+
+    <!--艾知识界面-->
+    <string name="child_qa_title">学习天地</string>
+    <string name="child_qa__describe">儿童百科知识是丰富儿童大脑知识储库的重要来源。和孩子玩知识问答游戏，让孩子在游戏中一天天长大和进步。</string>
+    <string name="pre_school">学龄前</string>
+    <string name="post_school">学龄后</string>
+    <string name="qa_level_choice">难度选择</string>
+
+    <string name="see_the_word_title">知识乐园</string>
+    <string name="see_the_word_one">听一听</string>
+    <string name="see_the_word_two">看一看</string>
+    <string name="childhood_album">童年相册</string>
+    <string name="upload_album">发布</string>
+    
+    <string name="net_poor">网络不给力</string>
+
+    <string name="check_network_connection">请检查网络连接</string>
+
+    <string name="cut_photo">剪裁图片</string>
+    <string name="ok">确    认</string>
+    <string name="quite">取    消</string>
+
+    <!--功能-->
+    <string name="alarmclock">闹钟</string>
+    <string name="findwatch">找手表</string>
+    <string name="notdisturb_mode">免打扰模式</string>
+    <string name="sos">SOS设置</string>
+    <string name="watchtellphonebook">手表电话薄</string>
+    <string name="familymembers">家庭成员</string>
+    <string name="Rewardsflower">奖励小红花</string>
+    <string name="locationmode">定位模式</string>
+    <string name="Remote_Shutdown">远程关机</string>
+
+    <!--宝贝信息-->
+    <string name="baby_info_hint">请填写</string>
+    <string name="baby_info_boy">男</string>
+    <string name="baby_info_girl">女</string>
+
+    <!---->
+    <string name="new_message">新消息</string>
+    <string name="clear_message">清空</string>
+
+    <!---->
+    <string name="telephone_name">姓名:</string>
+    <string name="telephone_names">请输入名称</string>
+    <string name="telephone_number">号码:</string>
+    <string name="telephone_numbers">请输入电话号码</string>
+
+    <!--toast-->
+    <string name="no_network">网络不给力</string>
+    <string name="send_instruct">发送指令中...</string>
+    <string name="add_success">添加成功!</string>
+    <string name="not_online">手表不在线</string>
+    <string name="error">错误</string>
+    <string name="admin_privileges">没有管理员权限</string>
+    <string name="flower_reset">小红花已清零!</string>
+    <string name="loading">设置电话薄中，请稍后...</string>
+    <string name="close_watch">您确定远程关闭手表?</string>
+    <string name="award_flower">奖励一朵小红花?</string>
+    <string name="award_flower_">奖励小红花</string>
+    <string name="award">奖励</string>
+    <string name="flower_clear">清零小红花</string>
+    <string name="flower_clear_">清零小红花?</string>
+    <string name="reset_flower">清零</string>
+    <string name="exit_account">退出账号</string>
+    <string name="exit_account_">您确定要退出吗?</string>
+    <string name="delete_message">您确定删除本条消息?</string>
+    <string name="delete_all_message">您确定清空所有消息?</string>
+    <string name="remove_binding">解除绑定</string>
+    <string name="remove_binding_">解除绑定后，您将无法查看手表的信息，是否确定解绑此设备?</string>
+    <string name="unbounded_watch">未绑定手表!</string>
+    <string name="complete_information">请完成宝贝信息！</string>
+    <string name="location_closed">手机位置显示已关闭</string>
+    <string name="location_open">手机位置显示已开启</string>
+    <string name="location_loading">正在定位中，请稍后...</string>
+    <string name="location_unable">无法获取手表定位信息</string>
+    <string name="repeat_location">暂未获取宝贝地理位置，请点击定位按钮重试</string>
+    <string name="relay_location">地理位置获取中，请稍后重试</string>
+    <string name="install_gold_or_baidu">请您先安装高德或百度地图客户端</string>
+    <string name="delete_zone">是否确定删除该安全区域?</string>
+    <string name="coincide_fence">与其它安全围栏有重合，请重新调整安全围栏范围</string>
+    <string name="password_incorrect">密码不正确，请重新输入！</string>
+    <string name="exit_program">再按一次退出程序</string>
+    <string name="phone_or_password_mistake">手机号或密码错误</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="is_binding">已绑定</string>
+    <string name="quit_out">退出</string>
+    <string name="message_code">6位短信验证码</string>
+    <string name="input_phone_number">请输入您的手机号</string>
+    <string name="relation_baby">与宝贝关系</string>
+    <string name="input_relation">请输入关系</string>
+    <string name="relation_words">关系名称不能超过5个字</string>
+    <string name="navigation">导航</string>
+    <string name="code_inside_box">请将二维码置于方框内</string>
+    <string name="scan_code">扫描二维码</string>
+    <string name="not_valid_imei">并非有效的IMEI码</string>
+
+    <!--family members-->
+    <string name="clear">取消</string>
+    <string name="relationship">未编辑关系</string>
+    <string name="me">我</string>
+    <string name="administrator">管理员</string>
+
+    <!--alarm clock-->
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="sure">确定</string>
+    <string name="day">周</string>
+
+    <!--disturb-->
+    <string name="sametime">起止时间不能相同</string>
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间</string>
+
+    <!--telephone number-->
+    <string name="repeattelephone">昵称或手机号重复</string>
+    <string name="editname">请填入名称</string>
+    <string name="editname_">的昵称</string>
+    <string name="edittelepone">请正确填入电话</string>
+    <string name="edittelepone_">的手机号</string>
+    <string name="edit_history">请填写记录</string>
+
+    <!--SOS-->
+    <string name="sos_1">号码1：</string>
+    <string name="sos_2">号码2：</string>
+    <string name="sos_3">号码3：</string>
+    <string name="not_null_empty">输入不能为空!</string>
+
+    <!--baby information-->
+    <string name="fill_in">请填写</string>
+    <string name="birthday">生日</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="days">日</string>
+    <string name="phone_number">手机号</string>
+    <string name="phone_number_hint">请输入11位手机号</string>
+    <string name="nick_name">昵称</string>
+    <string name="nick_name_">请输入昵称</string>
+    <string name="nick_name_hint">昵称不能超过5个字</string>
+    <string name="not_fill_data">您有未填写的数据</string>
+    <string name="unbundling">手表已解绑</string>
+
+    <!--history rount-->
+    <string name="today">今天</string>
+    <string name="cancel_play">取消播放</string>
+    <string name="play_track">播放轨迹</string>
+    <string name="get_address">正在获取地址...</string>
+    <string name="geographical_failure">地理位置获取失败</string>
+    <string name="nearby">附近</string>
+    <string name="befor">前一天</string>
+    <string name="after">后一天</string>
+    <string name="no_history">无历史轨迹</string>
+
+    <!--SR series-->
+    <string name="home">家</string>
+    <string name="school">学校</string>
+    <string name="zone_radius">区域半径</string>
+    <string name="zone_name">区域名称</string>
+    <string name="geographic_position">地理位置</string>
+    <string name="enter_name_home_school">请输入地名(家、学校...)</string>
+    <string name="save_area">保存安全区域</string>
+
+    <!--changephoneDialog-->
+    <string name="phone_not_correct">手机号码格式不正确!</string>
+    <string name="ente_phone_number">请输入手机号</string>
+
+    <!--ChildMsg activity-->
+    <string name="record_time">录音不能超过15秒</string>
+    <string name="show_character">手表最多显示10个汉字哦！</string>
+    <string name="hold_to_talk">按住说话</string>
+    <string name="loosen_the_end">松开结束</string>
+    <string name="sdcard_support">发送语音需要sdcard支持!</string>
+    <string name="record_short">录音时间太短</string>
+    <string name="send_failed">发送失败，请检测服务器是否连接</string>
+    <string name="record_permission">录音失败，请检查是否开启录音权限</string>
+    <string name="record_delete">语音已被删除</string>
+    <string name="no_more_data">已无更多数据</string>
+    <string name="click_input">点击输入内容</string>
+
+    <!--ParentheadViewUtils-->
+    <string name="father">爸爸</string>
+    <string name="mother">妈妈</string>
+    <string name="grandpa">爷爷</string>
+    <string name="grandma">奶奶</string>
+    <string name="maternal_grandfather">姥爷</string>
+    <string name="maternal_grandmother">姥姥</string>
+    <string name="brother">哥哥</string>
+    <string name="sister">姐姐</string>
+    <string name="other">其他</string>
+    
+    <!--weather activity-->
+    <string name="weather_refresh">刷新</string>
+    <string name="weather_result">无结果</string>
+    <string name="weather_loading">加载中..</string>
+
+</resources>

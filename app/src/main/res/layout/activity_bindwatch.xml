@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ImageView
+        android:id="@+id/register_tv_tophint"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@mipmap/bind_watch_top"/>
+
+
+    <Button
+        android:id="@+id/bindwatch_btn_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:text="@string/bindwatch_qrcode_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_middle_text_size"
+        android:background="@drawable/button_common_on_selector_green" />
+
+
+    <Button
+        android:id="@+id/bindwatch_btn_imei"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:layout_marginTop="@dimen/bind_top_margin"
+        android:text="@string/bindwatch_imei_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_middle_text_size"
+        android:background="@drawable/button_common_on_selector" />
+
+
+</LinearLayout>

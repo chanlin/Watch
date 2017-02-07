@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/baby_info_height"
+       android:layout_marginTop="@dimen/baby_info_list_item_height"
+       android:background="@drawable/item_selector">
+
+
+       <ImageView
+           android:id="@+id/dear_iv_head"
+           android:layout_width="@dimen/head_image_width"
+           android:layout_height="@dimen/head_image_width"
+           android:src="@mipmap/head_image_boy"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/button_left_margin"/>
+
+       <TextView
+           android:id="@+id/dear_tv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="小明"
+           android:textColor="@color/black_text_color"
+           android:textSize="15sp"
+           android:layout_toRightOf="@+id/dear_iv_head"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/button_left_margin"/>
+
+
+       <ImageView
+           android:id="@+id/dear_iv_tonext"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/tonext_img"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="@dimen/button_right_margin"/>
+       <ImageView
+           android:id="@+id/dear_iv_barrery_grade"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/battery_one"
+           android:layout_toLeftOf="@+id/dear_iv_tonext"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="@dimen/button_right_margin"
+           />
+
+   </RelativeLayout>
+
+</LinearLayout>

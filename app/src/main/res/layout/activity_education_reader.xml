@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guide_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8000000">
+
+        <RelativeLayout
+            android:id="@+id/guide_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+
+                android:layout_width="@dimen/common_title_height"
+                android:layout_height="@dimen/common_title_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@mipmap/reader_guide_title_right"
+
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/guide_title"
+            android:src="@mipmap/reader_guide_right" />
+
+        <ImageView
+            android:id="@+id/guide_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/reader_guide_middle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/guide_middle"
+            android:src="@mipmap/reader_guide_toleft" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/guide_middle"
+            android:src="@mipmap/reader_guide_toright" />
+    </RelativeLayout>
+
+</RelativeLayout>

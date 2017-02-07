@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/insurance_top_msg_bg">
+
+    <ImageView
+        android:id="@+id/iv_insurance_top_warning_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/insurance_complete_top_margin"
+        android:background="@mipmap/icon_insurance_top_msg_warning"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text_color"
+        android:textSize="@dimen/info_right_text_size"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_insurance_top_warning_icon"
+        android:layout_marginLeft="@dimen/insurance_complete_top_margin"
+        android:layout_marginRight="@dimen/insurance_complete_top_margin"
+        android:text="@string/insurance_top_msg_warning"
+        />
+
+
+</RelativeLayout>

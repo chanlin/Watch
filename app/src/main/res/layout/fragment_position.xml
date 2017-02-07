@@ -1,0 +1,244 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jajale.watch.fragment.LocationFragment">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+
+    <!-- 下拉刷新会用-->
+    <!--<in.srain.cube.views.ptr.PtrClassicFrameLayout-->
+    <!--xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/rotate_header_list_view_frame"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/app_bg"-->
+    <!--cube_ptr:ptr_duration_to_close="200"-->
+    <!--cube_ptr:ptr_duration_to_close_header="1000"-->
+    <!--cube_ptr:ptr_keep_header_when_refresh="true"-->
+    <!--cube_ptr:ptr_pull_to_fresh="false"-->
+    <!--cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"-->
+    <!--cube_ptr:ptr_resistance="1.7">-->
+
+    <!--<ListView-->
+    <!--android:overScrollMode="never"-->
+    <!--android:id="@+id/lv_predestine"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@null"-->
+    <!--android:dividerHeight="0.0dip"-->
+    <!--android:scrollbars="none" />-->
+    <!--</in.srain.cube.views.ptr.PtrClassicFrameLayout>-->
+
+    <!-- 这里后期 替换成 MAPView-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"></FrameLayout>-->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.amap.api.maps.TextureMapView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <!--&lt;!&ndash; start  &ndash;&gt;-->
+
+        <GridView
+            android:id="@+id/map_bottom_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/swipe_container"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:scrollbars="none">
+
+        </GridView>
+
+        <ImageView
+            android:id="@+id/iv_to_save_fence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/button_safe_fence_selector" />
+        <ImageView
+            android:id="@+id/iv_to_history_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iv_to_save_fence"
+            android:src="@drawable/button_history_track_selector" />
+        <!--<ProgressBar-->
+        <!--android:id="@+id/position_progressbar"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_above="@+id/swipe_container"-->
+        <!--android:background="@color/white"-->
+        <!--android:progressDrawable="@drawable/progress_style" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/position_rl_authentication"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/app_bg"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/position_tv_authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_textview"
+                android:layout_centerInParent="true"
+                android:text="@string/authentication_text_hint"
+                />
+            <ImageView
+                android:id="@+id/position_iv_authentication_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/authentication_delete"/>
+        </RelativeLayout>
+
+        <com.jajale.watch.cviews.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true">
+
+
+            <RelativeLayout
+                android:id="@+id/map_bottom_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/map_bottom_heith"
+                android:background="@mipmap/map_bottom_bg">
+
+
+                <ImageView
+                    android:id="@+id/map_bottom_head"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/head_image_boy"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/map_navigation_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="宝贝"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/update_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="3dp"
+                        android:maxLines="2"
+                        android:text="定位中..."
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/map_navigation_btn"
+                    android:layout_width="@dimen/small_button_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@+id/map_call_phone_btn"
+                    android:background="@drawable/button_navigation_selector"
+                    android:drawableTop="@mipmap/position_bottom_navigation"
+                    android:paddingTop="6dp"
+                    android:text="@string/map_navigation_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:id="@+id/map_call_phone_btn"
+                    android:layout_width="@dimen/small_button_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@+id/map_monitor_btn"
+                    android:background="@drawable/button_call_phone_selector"
+                    android:drawableTop="@mipmap/position_bottom_call_phone"
+                    android:paddingTop="6dp"
+                    android:text="@string/map_call_phone_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/map_monitor_btn"
+                    android:layout_width="@dimen/small_button_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/button_common_on_selector"
+                    android:drawableTop="@mipmap/position_bottom_monitor"
+                    android:paddingTop="6dp"
+                    android:text="@string/map_monitor_button_text"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+        </com.jajale.watch.cviews.SwipeRefreshLayout>
+        <!--&lt;!&ndash; end  &ndash;&gt;-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

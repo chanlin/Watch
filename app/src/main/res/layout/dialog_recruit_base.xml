@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_layout_root"
+        android:layout_width="300dp"
+        android:layout_height="311.5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_white_recruit"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/top_logo_recruit"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="大河报小记者招募中"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp"
+            android:enabled="false"
+            />
+        <!--<view-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="12dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/dahebao_zhaomu_des"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:lineSpacingExtra="4.5dp"
+            android:layout_marginLeft="11.5dp"
+            android:layout_marginRight="11.5dp"
+            android:layout_marginTop="12dp"
+            />
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_recruit_btn_bg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="11.5dp"
+            android:layout_marginRight="11.5dp"
+            android:text="立即报名"
+            android:textColor="@color/app_color"
+
+            />
+
+    </LinearLayout>
+    <!--android:layout_marginLeft="-10dp"-->
+    <!--android:layout_toRightOf="@id/ll_layout_root"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_marginTop="90dp"-->
+    <ImageView
+        android:id="@+id/btn_dialog_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn_close_recruit"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>

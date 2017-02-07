@@ -1,0 +1,528 @@
+<resources>
+    <string name="weather_live">Real-time</string>
+    <string name="weather_forecast">Forecast</string>
+    <string name="map_2d">2D-MAP</string>
+    <string name="map_3d">3D-MAP</string>
+    <string name="map_satellite">Satellite-MAP</string>
+
+    <string name="base_station_location">CellTrack</string>
+    <string name="gps_location">GPS</string>
+    <string name="wifi_location">WIFI</string>
+
+    <string name="app_name">Huaying Children APP</string>
+    <string name="action_settings">Settings</string>
+    <!--二维码扫描-->
+    <integer name="viewfinder_border_width">4</integer>
+    <integer name="viewfinder_border_length">30</integer>
+    <string name="qrcode_top_hint">Scan the qr code on the reverse of the watch</string>
+    <string name="qrcode_bottom_hint">Scan the qr code on the reverse of the watch</string>
+
+    <string name="loading_text">loading...</string>
+    <!-- tab 标签 -->
+    <string name="function_name_position">Location</string>
+    <string name="function_name_msg">Message</string>
+    <string name="function_name_helthy">Health</string>
+    <string name="function_name_discover">Discover</string>
+    <string name="function_name_dear">baby</string>
+    <!--首页-->
+    <string name="homepage_button_text">Join Huaying</string>
+    <string name="homepage_button_text_new">Enter Huaying</string>
+    <!--注册-->
+    <string name="register_button_text">Register Finish</string>
+    <string name="register_top_text">In order to facilitate the communication with baby, please verify your phone number</string>
+    <string name="get_sms_code">Get CAPTCHA</string>
+    <string name="again_sms_code">Resend CAPTCHA</string>
+    <string name="register_title_text">Register</string>
+    <!--绑定手表-->
+    <string name="bindwatch_title_text">Add Watch</string>
+    <string name="bindwatch_qrcode_text">Sweep QR code bind</string>
+    <string name="bindwatch_imei_text">IMEI bind</string>
+    <string name="bindwatch_hint_text">Please make sure the watch is boot before binding</string>
+    <string name="bindwatch_imei_hint_text">Note: watch binding number on the back of the 15 Numbers</string>
+    <string name="bindwatch_imei_edit_hint_text">Please enter the IMEI number</string>
+    <string name="bindwatch_imei_button_text">Binding</string>
+    <!--登录-->
+    <string name="login_button_text">Login</string>
+    <string name="login_top_hint_text">You are registered user, please login directly</string>
+    <string name="login_edit_hint_text">Please input 6~16 digits or letters</string>
+    <string name="login_tv_forget">forget the password?</string>
+    <!--重置密码-->
+    <string name="reset_pwd_button_text">Login</string>
+    <string name="reset_pwd_top_text">Verification code has been sent to...</string>
+    <string name="reset_pwd_title_text">Reset Password</string>
+    <string name="reset_pwd_edit_hint_text">Enter 6 to 16 new password</string>
+    <string name="reset_pwd_sms_code">Resend verification code</string>
+    <string name="reset_pwd_and_login">To reset the password and log in</string>
+
+    <!--和宝贝关系-->
+    <string name="family_select_title_text">The relationship between you and the baby</string>
+    <!--宝贝信息-->
+    <string name="baby_info_title_text">Baby Information </string>
+    <string name="baby_info_head_text">Avatar </string>
+    <string name="baby_info_name_text">nickname</string>
+    <string name="baby_info_sex_text">sex</string>
+    <string name="baby_info_phone_text">watch phonenumber</string>
+    <string name="baby_info_birthday_text">Birthday</string>
+    <!--定位-->
+    <string name="map_call_phone_button_text">call up</string>
+    <string name="map_navigation_button_text">Navigation</string>
+    <string name="map_monitor_button_text">listening</string>
+    <!--疫苗-->
+    <string name="vaccine_title_text">宝贝1的疫苗接种情况</string>
+    <string name="vaccine_detail_state">接种状态</string>
+    <string name="vaccine_detail_date">接种日期</string>
+    <string name="vaccine_detail_describe">疫苗介绍</string>
+    <!--宝贝-->
+    <string name="dear_text_insurance">保险</string>
+    <string name="dear_text_education">教育</string>
+    <string name="dear_text_expect">敬请期待</string>
+    <string name="dear_button_release_bound">remove binding</string>
+    <string name="dear_title_text">baby</string>
+    <string name="dear_title_notelephone">No telephone</string>
+    <!--闹钟-->
+    <string name="alarm_title_text">alarm clock</string>
+    <string name="alarm_bottom_button_text">Add a new alarm clock</string>
+    <string name="alarm_set_alarm">Edit the alarm clock</string>
+    <string name="alarm_repeat">Repeat</string>
+    <string name="everyday">Everyday</string>
+    <string name="no_repeat">NORepeat</string>
+    <string name="week">W</string>
+    <string name="remind_to">Remind to</string>
+    <string name="hour">h</string>
+    <string name="minute">m</string>
+    <string name="morning">am</string>
+    <string name="afternoon">pm</string>
+    <!--家庭成员-->
+    <string name="family_member_title_text">family members </string>
+    <string name="family_member_baby_text">baby</string>
+    <string name="family_member_parents_text">parents</string>
+    <string name="family_member_button_bottom">Add new parents</string>
+
+    <string name="family_member_button_text1">Relationship or name</string>
+    <string name="family_member_button_text2">Administrator Settings</string>
+    <string name="family_member_button_text3">Delete contact</string>
+    <!--免打扰-->
+    <string name="not_disturb_title_text">Watch free time alone</string>
+    <string name="not_disturb_set_disturb">Editors not disturb time</string>
+    <string name="not_disturb_start_time">start time</string>
+    <string name="not_disturb_end_time">end time</string>
+    <!--定位模式-->
+    <string name="location_mode_title_text">location mode</string>
+    <string name="location_mode_low">power saving mode</string>
+    <string name="location_mode_mid">normal mode</string>
+    <string name="location_mode_high">High Frequent Mode</string>
+    <string name="location_mode_explain_low">Location low frequency</string>
+    <string name="location_mode_explain_mid">Location normal frequency</string>
+    <string name="location_mode_explain_high">Location high frequency</string>
+
+    <!--添加新家长-->
+    <string name="add_family_member_text1">New parents to join the family as follows：</string>
+    <string name="add_family_member_text2">Scan the QR code</string>
+    <string name="add_family_member_text3">Manual Input IMEI</string>
+    <string name="add_family_member_title_text">Add new parents</string>
+
+    <!-- 消息列表 -->
+    <string name="msg_system_list_title">system messages</string>
+
+    <!--保险-->
+    <string name="insurance_title_text">儿童意外、重疾综合保险方案</string>
+    <string name="insurance_first_text_1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;本保险由中国大地财产保险股份有限公司营业部承保；深圳市华英智联通信技术有限公司已为您出资支付了本保险的保险费，无需您再支付保险费。</string>
+    <string name="insurance_first_text_2">&#160;&#160;&#160;&#160;&#160;&#160;&#160;如您为宝贝的监护人且同意领取该保险，请点击立即投保录入保险信息。</string>
+    <string name="insurance_first_text_3">投保年龄：3-14周岁</string>
+    <string name="insurance_first_text_4">保险期间：1年；孩子身体健康</string>
+    <string name="insurance_second_text_title">保险方案：</string>
+    <string name="insurance_second_text_content_up">1、投保时年龄在三周岁至十四周岁间（含）,身体健康，能正常生活的儿童，可作为被保险人；</string>
+    <string name="insurance_second_text_content_mid">2、保险期间：1年；宝贝身体健康保险期间以保险公司出具的保险单上列明的期间为准。</string>
+    <string name="insurance_second_text_content_bottom">3、一份保险保障包括以下：</string>
+
+    <string name="insurance_describe_top">如投保前儿童已患有所列12种重大疾病或患有与所列重大疾病有直接因果关系的疾病，请不要投保，否则不能得到理赔；</string>
+    <string name="insurance_describe_mid">每一儿童使用一个或一个以上手机、手表产品的，保险公司对同一被保险人承担的保险责任以一份为限，超过部分不承担保险责任。</string>
+    <string name="insurance_describe_uper">上述保险责任及保险金额属于条款中的部分内容，如有冲突，以本方案为准；条款中的其它保险责任不适用于本保险。</string>
+    <string name="insurance_describe_bottom">除外责任及未尽事项以条款为准。</string>
+
+    <string name="insurance_content_t_1">＊保险期间以保险公司出具的保险单为准。</string>
+
+    <string name="insurance_describe_get_confirm">如您是儿童的监护人且同意领取该保险，请点击“立即投保”</string>
+
+    <string name="insurance_first_button_text">立即投保</string>
+    <string name="insurance_complete_title">您的投保已完成</string>
+    <string name="insurance_complete_date_des_top">保单详情可在10个工作日后登录中国大地官方</string>
+    <string name="insurance_complete_date_des_bottom">网站或拨打热线电话进行查询</string>
+    <string name="insurance_complete_report_title">全国客户服务及理赔报案电话：</string>
+    <string name="insurance_complete_report_number">95590</string>
+    <string name="insurance_complete_title_dadi">大地官网</string>
+    <string name="insurance_complete_title_dadi_link_title">＊大地官网链接：</string>
+    <string name="insurance_complete_dadi_link_content">www.95590.cn</string>
+
+    <!--编辑保险信息-->
+    <string name="edit_insurance_text_parent_info">投保人信息</string>
+    <string name="edit_insurance_text_baby_info">儿童(被保险人)信息</string>
+    <string name="edit_insurance_text_baby_info2">投保年龄为3-14周岁</string>
+    <string name="edit_insurance_button_text">确认并投保</string>
+    <!--系统设置-->
+    <string name="system_setting_title_text">System Settings</string>
+    <string name="system_setting_button_logoff">Logout</string>
+    <string name="system_setting_feedback">Feedback</string>
+    <string name="system_setting_question">Instructions</string>
+    <string name="system_setting_app_update">Check Updata</string>
+    <string name="system_setting_app_about">About Huaying</string>
+    <!--意见反馈-->
+    <string name="feedback_title_text">Feedback</string>
+    <string name="feedback_edit_text_hint">Please enter your comments or Suggestions</string>
+
+    <!--sos-->
+    <string name="sos_setting_title_text">SOS Settings</string>
+    <string name="sos_setting_hint_top">You can set up three SOS emergency contacts</string>
+
+    <!--教育-->
+    <string name="education">education</string>
+
+    <!--安全围栏-->
+    <string name="save_fence">SR Series</string>
+    <string name="save_edit_fence">Edit the security fence</string>
+    <string name="save_fence_set">Set the activity area of the baby</string>
+    <string name="save_fence_hint">When baby arrive or leave, you will receive notification of baby</string>
+    <!--实名认证-->
+    <string name="authentication_title">实名认证</string>
+    <string name="authentication_text_1">您的手表使用的是联通套餐，需要进行实名认证，才能正常使用。</string>
+    <string name="authentication_text_2">1.手表与联通卡脱离超过3天，将停止联通服务。</string>
+    <string name="authentication_text_3">2. 需上传真实身份证，我们将在24小时之内完成审核。</string>
+    <string name="authentication_text_4">拍照时请确保姓名、证件号码等信息清晰可见</string>
+    <string name="authentication_text_5">拍照时请确保签发机关、有效期限等信息清晰可见</string>
+    <string name="authentication_text_6">请上传本人手持身份证照片，保证人像五官和身份证照片清晰可见</string>
+
+
+    <string name="authentication_text_hint">Id information in the audit, please be patient</string>
+
+    <!--历史轨迹-->
+    <string name="history_track_title">historical route</string>
+    <string name="history_track_play">Play track</string>
+    <!-- Dialog -->
+    <string name="input_nickname_hint">Limit 2 - seven words It is prohibited to use illegal nickname</string>
+    <string name="str_ok">OK</string>
+    <string name="dialog_birthday_selector_title">生日</string>
+    <string name="grow_record">Growth record </string>
+    <string name="grow_height_curve">Height curve</string>
+    <string name="grow_weight_curve">Weight curve</string>
+
+    <string name="debug_version_name">1.0.0</string>
+
+    <string name="title_add_grow_record">Modify the growth record</string>
+    <string name="title_modify_grow_record">Modify the growth record</string>
+    <string name="save">Save</string>
+    <string name="limit_numbers">0123456789.</string>
+
+    <string name="button_pushtotalk">Hold to talk</string>
+    <string name="move_up_to_cancel">Fingers slide, cancel sending</string>
+    <string name="recoding_fail">The recording failure, please try again！</string>
+    <string name="release_to_cancel">Loosen the fingers, to cancel sending</string>
+    <string name="promote_center_text_waite">Your message has been sent, please be patient</string>
+    <string name="str_send">Send</string>
+
+    <string name="str_home_title">Residence</string>
+
+
+    <string name="str_take_picture">Photo upload</string>
+    <string name="str_local_picture">Local image upload</string>
+
+    <string name="str_notification_title"></string>
+    <string name="str_notification_content"></string>
+
+    <string name="cannot_open_file_Path">无法打开文件: %1$s</string>
+    <string name="no_media_warning">Storage media not present</string>
+    <string name="no_media_hint">Sharing the storage media with a PC can make it inaccessible</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_backwards">Search backwards</string>
+    <string name="search_forwards">Search forwards</string>
+    <string name="search_document">Search document</string>
+    <string name="picker_title_App_Ver_Dir">%1$s %2$s: %3$s</string>
+    <string name="outline_title">Table of Contents</string>
+    <string name="enter_password">Enter password</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching&#8230;</string>
+    <string name="toggle_links">Highlight and enable links</string>
+    <string name="no_further_occurrences_found">No further occurrences found</string>
+    <string name="select">Select</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="strike_out">Strike-out</string>
+    <string name="delete">Delete</string>
+    <string name="highlight">Highlight</string>
+    <string name="underline">Underline</string>
+    <string name="edit_annotations">Edit annotations</string>
+    <string name="ink">Ink</string>
+    <string name="print">Print</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="parent_directory">[Up one level]</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="entering_reflow_mode">Entering reflow mode</string>
+    <string name="leaving_reflow_mode">Leaving reflow mode</string>
+    <string name="print_failed">Print failed</string>
+    <string name="select_text">Select text</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="no_text_selected">No text selected</string>
+    <string name="draw_annotation">Draw annotation</string>
+    <string name="nothing_to_save">Nothing to save</string>
+    <string name="document_has_changes_save_them_">Document has changes. Save them?</string>
+    <string name="cannot_open_document">Cannot open document</string>
+    <string name="cannot_open_document_Reason">Cannot open document: %1$s</string>
+    <string name="cannot_open_buffer">Cannot open buffer</string>
+    <string name="fill_out_text_field">Fill out text field</string>
+    <string name="okay">Okay</string>
+    <string name="choose_value">Choose value</string>
+    <string name="not_supported">Not supported</string>
+    <string name="copy_text_to_the_clipboard">Copy text to the clipboard</string>
+    <string name="more">More</string>
+    <string name="accept">Accept</string>
+    <string name="copy_text">copy text</string>
+    <string name="format_currently_not_supported">Format currently not supported</string>
+    <string name="toggle_reflow_mode">Toggle reflow mode</string>
+
+    <!--电话薄-->
+    <string name="telephone_setting_title_text">Watch phone book</string>
+    <string name="telephone_setting_hint_top">You can add 10 phone book contacts</string>
+
+
+
+
+    <string name="str_loading_default_hint">loading…</string>
+    <string name="footer_hint_load_normal">More</string>
+    <string name="footer_hint_load_no_more">All the data</string>
+
+
+    <string name="send_code_success">Instructions sent successfully！</string>
+    <string name="send_code_success2">Instructions sent successfully！</string>
+
+    <string name="insurance_top_msg_warning">中国公民请填写身份证，军人可以使用军官证，未按规定正确填写的不予通过</string>
+
+    <string name="errcode_success">Send success</string>
+    <string name="errcode_cancel">Send cancel</string>
+    <string name="errcode_deny">Send rejected</string>
+    <string name="errcode_unknown">Send return</string>
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博发起的请求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客户端请求消息失败</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>
+
+    <string name="dahebao_zhaomu_des">大河报小记者是《大河报》针对中小学生设立的
+先进性组织，通过参加各种社会实践活动丰富孩
+子们的课余文化生活，提高其综合素质。</string>
+
+    <string name="watch_code_http_save_success">Save success, watch in the synchronization</string>
+    <string name="watch_code_socket_save_success">Send success</string>
+
+    <string name="dhb_title">大河报小记者</string>
+
+    <string name="item_des_grows">成长</string>
+    <string name="item_des_expect">期待</string>
+    <string name="item_des_vaccine">疫苗</string>
+
+    <string name="item_separate_infomation">资讯</string>
+
+
+    <string name="weather_title_text">Weather</string>
+
+    <!--艾知识界面-->
+    <string name="child_qa_title">学习天地</string>
+    <string name="child_qa__describe">儿童百科知识是丰富儿童大脑知识储库的重要来源。和孩子玩知识问答游戏，让孩子在游戏中一天天长大和进步。</string>
+    <string name="pre_school">学龄前</string>
+    <string name="post_school">学龄后</string>
+    <string name="qa_level_choice">难度选择</string>
+
+    <string name="see_the_word_title">知识乐园</string>
+    <string name="see_the_word_one">听一听</string>
+    <string name="see_the_word_two">看一看</string>
+    <string name="childhood_album">童年相册</string>
+    <string name="upload_album">发布</string>
+    
+    <string name="net_poor">Without the Internet</string>
+
+    <string name="check_network_connection">check the network connection</string>
+
+    <string name="cut_photo">Cut images</string>
+    <string name="ok">OK</string>
+    <string name="quite">CANCEL</string>
+
+    <!--功能-->
+    <string name="alarmclock">Alarm Clock</string>
+    <string name="findwatch">Find Watch</string>
+    <string name="notdisturb_mode">Notdisturb</string>
+    <string name="sos">SOS</string>
+    <string name="watchtellphonebook">Watch Tell</string>
+    <string name="familymembers">Family</string>
+    <string name="Rewardsflower">Award</string>
+    <string name="locationmode">Location</string>
+    <string name="Remote_Shutdown">Shutdown</string>
+
+    <!--宝贝信息-->
+    <string name="baby_info_hint">NULL</string>
+    <string name="baby_info_boy">boy</string>
+    <string name="baby_info_girl">girl</string>
+
+    <!---->
+    <string name="new_message">new message</string>
+    <string name="clear_message">clear</string>
+
+    <!---->
+    <string name="telephone_name">name:</string>
+    <string name="telephone_names">Please enter name</string>
+    <string name="telephone_number">number:</string>
+    <string name="telephone_numbers">Please enter the Phone</string>
+
+    <!--toast-->
+    <string name="no_network">no network</string>
+    <string name="send_instruct">sending instruct...</string>
+    <string name="add_success">add success!</string>
+    <string name="not_online">watch not online</string>
+    <string name="error">error!</string>
+    <string name="admin_privileges">No administrator privileges</string>
+    <string name="flower_reset">flower reset!</string>
+    <string name="loading">loading...</string>
+    <string name="close_watch">Are you sure you remote close watch?</string>
+    <string name="award_flower">Reward a small red flowers?</string>
+    <string name="award_flower_">Rewardflowers</string>
+    <string name="award">Rewards</string>
+    <string name="flower_clear">Reset the small red flowers</string>
+    <string name="flower_clear_">Reset the small red flowers?</string>
+    <string name="reset_flower">Reset</string>
+    <string name="exit_account">Exit account</string>
+    <string name="exit_account_">Are you sure you want to exit?</string>
+    <string name="delete_message">Are you sure to delete this message?</string>
+    <string name="delete_all_message">Are you sure to empty all the news?</string>
+    <string name="remove_binding">Remove Binding</string>
+    <string name="remove_binding_">You will not be able to view the information，are you sure?</string>
+    <string name="unbounded_watch">Unbounded watch!</string>
+    <string name="complete_information">Please complete information！</string>
+    <string name="location_closed">Mobile location has been closed</string>
+    <string name="location_open">Mobile location has been open</string>
+    <string name="location_loading">Is located in the later, loading...</string>
+    <string name="location_unable">Unable to get the location</string>
+    <string name="repeat_location">Please click on the locate button to retry</string>
+    <string name="relay_location">Get in the geographical position，please try again later</string>
+    <string name="install_gold_or_baidu">Please install gold or baidu maps client</string>
+    <string name="delete_zone">Whether to remove the security area?</string>
+    <string name="coincide_fence">Coincide，Please readjust the security fence range</string>
+    <string name="password_incorrect">Password is not correct, please enter again！</string>
+    <string name="exit_program">Again according to exit the program</string>
+    <string name="phone_or_password_mistake">Mobile phone number or password mistake</string>
+    <string name="bind_success">Binding success</string>
+    <string name="is_binding">Is binding</string>
+    <string name="quit_out">Exit</string>
+    <string name="message_code">Message authentication code</string>
+    <string name="input_phone_number">input phone number</string>
+    <string name="relation_baby">Relationship with the baby</string>
+    <string name="input_relation">Enter the relationship</string>
+    <string name="relation_words">name cannot be more than 5 words</string>
+    <string name="navigation">Navigation</string>
+    <string name="code_inside_box">Please put the qr code inside the box</string>
+    <string name="scan_code">Scan the qr code</string>
+    <string name="not_valid_imei">The IMEI code is not valid</string>
+
+    <!--family members-->
+    <string name="clear">clear</string>
+    <string name="relationship">relationship</string>
+    <string name="me">me</string>
+    <string name="administrator">Administrator</string>
+
+    <!--alarm clock-->
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Saty</string>
+    <string name="sunday">Sun</string>
+    <string name="sure">sure</string>
+    <string name="day">day</string>
+
+    <!--disturb-->
+    <string name="sametime">Time is not the same</string>
+    <string name="starttime">start time</string>
+    <string name="endtime">end time</string>
+
+    <!--telephone number-->
+    <string name="repeattelephone">name or phone number repeat</string>
+    <string name="editname">Please input</string>
+    <string name="editname_">name</string>
+    <string name="edittelepone">Please input</string>
+    <string name="edittelepone_">telephone</string>
+    <string name="edit_history">Please fill in the record</string>
+
+    <!--SOS-->
+    <string name="sos_1">number 1：</string>
+    <string name="sos_2">number 2：</string>
+    <string name="sos_3">number 3：</string>
+    <string name="not_null_empty">Input can\'t be empty!</string>
+
+    <!--baby information-->
+    <string name="fill_in">import</string>
+    <string name="birthday">birthday</string>
+    <string name="year">Y</string>
+    <string name="month">MM</string>
+    <string name="days">DD</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_hint">Please enter the 11 phone number</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="nick_name_">Please enter nick name</string>
+    <string name="nick_name_hint">Cannot be more than five words</string>
+    <string name="not_fill_data">You have not fill in the data</string>
+    <string name="unbundling">The watch is unbundling</string>
+
+    <!--history rount-->
+    <string name="today">Today</string>
+    <string name="cancel_play">Cancel the play</string>
+    <string name="play_track">Play track</string>
+    <string name="get_address">get the address...</string>
+    <string name="geographical_failure">Geographical position for failure</string>
+    <string name="nearby">Nearby</string>
+    <string name="befor">befor</string>
+    <string name="after">after </string>
+    <string name="no_history">no_history route</string>
+
+    <!--SR series-->
+    <string name="home">home</string>
+    <string name="school">school</string>
+    <string name="zone_radius">Radius</string>
+    <string name="zone_name">Name</string>
+    <string name="geographic_position">position</string>
+    <string name="enter_name_home_school">Please enter name</string>
+    <string name="save_area">Save</string>
+
+    <!--changephoneDialog-->
+    <string name="phone_not_correct">Phone number format is not correct!</string>
+    <string name="ente_phone_number">Please enter the phone number</string>
+
+    <!--ChildMsg activity-->
+    <string name="record_time">Record can\'t exceed 15s</string>
+    <string name="show_character">Watch shows most 10 characters！</string>
+    <string name="hold_to_talk">Hold to talk</string>
+    <string name="loosen_the_end">Loosen the end</string>
+    <string name="sdcard_support">need sdcard support!</string>
+    <string name="record_short">record time too short</string>
+    <string name="send_failed">Send failed，Please test the server connection</string>
+    <string name="record_permission">record failed，Please test open the record permission</string>
+    <string name="record_delete">Voice has been deleted</string>
+    <string name="no_more_data">No more data</string>
+    <string name="click_input">Click on the input</string>
+
+    <!--ParentheadViewUtils-->
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="grandpa">Grandfather</string>
+    <string name="grandma">Grandmother</string>
+    <string name="maternal_grandfather">Grandpa</string>
+    <string name="maternal_grandmother">Grandma</string>
+    <string name="brother">Brother</string>
+    <string name="sister">Sister</string>
+    <string name="other">Other</string>
+
+    <!--weather activity-->
+    <string name="weather_refresh">refresh</string>
+    <string name="weather_result">NO Result</string>
+    <string name="weather_loading">Loading..</string>
+
+</resources>

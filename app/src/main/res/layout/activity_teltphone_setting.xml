@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!--<ListView-->
+    <!--android:id="@+id/teltphone_setting_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@android:color/transparent"-->
+    <!--android:fastScrollEnabled="false"-->
+    <!--android:scrollbars="none"-->
+    <!--android:listSelector="@android:color/transparent">-->
+
+    <!--</ListView>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="36dp"-->
+    <!--android:background="@color/app_bg"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="@dimen/button_left_margin"-->
+    <!--android:text="@string/telephone_setting_hint_top" />-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--style="@style/black_textview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/button_left_margin"-->
+    <!--android:text="号码1:" />-->
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/sos_setting_et_number_1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/app_color"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="11"-->
+    <!--android:paddingLeft="10dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View style="@style/info_line_toleft" />-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--style="@style/black_textview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/button_left_margin"-->
+    <!--android:text="号码2:" />-->
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/sos_setting_et_number_2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/app_color"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="11"-->
+    <!--android:paddingLeft="10dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View style="@style/info_line_toleft" />-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--style="@style/black_textview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/button_left_margin"-->
+    <!--android:text="号码3:" />-->
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/sos_setting_et_number_3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/app_color"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="11"-->
+    <!--android:paddingLeft="10dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View style="@style/info_line_toleft" />-->
+    <!--</LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/laytou_1"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_2"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_3"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_4"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_5"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_6"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_7"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_8"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_9"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/call_item_margin_bottom" />
+
+            <include
+                android:id="@+id/laytou_10"
+                layout="@layout/item_telephone_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

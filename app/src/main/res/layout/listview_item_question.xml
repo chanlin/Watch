@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/ten_margin"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/question_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_selector">
+
+        <TextView
+            android:id="@+id/question_tv_title"
+            style="@style/info_textview_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize = "end"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

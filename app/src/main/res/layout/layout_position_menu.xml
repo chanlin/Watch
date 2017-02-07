@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/map_bottom_heith"
+    android:background="@mipmap/map_bottom_bg"
+    >
+    <ImageView
+        android:id="@+id/map_bottom_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/map_bottom_head"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="小明"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:text="北苑路甲一号13号楼"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/small_button_width"
+        android:layout_height="@dimen/small_button_heith"
+        android:background="@drawable/button_call_phone_selector"
+        android:layout_centerVertical="true"
+        android:text="@string/map_call_phone_button_text"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

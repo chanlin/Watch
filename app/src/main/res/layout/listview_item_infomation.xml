@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/iv_item_ad_pic"
+        android:layout_width="@dimen/item_ad_pic_width"
+        android:layout_height="@dimen/item_ad_pic_height"
+        android:layout_marginLeft="@dimen/item_ad_side_margin"
+        android:layout_marginTop="@dimen/item_ad_side_margin"
+        android:background="@mipmap/bg_info_right_default"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="曼谷"
+        android:textSize="18sp"
+        android:textColor="@color/black_text_color"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/iv_item_ad_pic"
+        android:layout_marginLeft="@dimen/item_ad_side_margin"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_item_info_content"
+        android:layout_below="@id/tv_item_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天使之城畅玩东方夏威夷"
+        android:textSize="14sp"
+        android:textColor="@color/info_right_text_color"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@id/iv_item_ad_pic"
+        android:layout_marginLeft="@dimen/item_ad_side_margin"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/listview_separate_line_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/item_ad_side_margin"
+        android:layout_marginRight="@dimen/item_ad_side_margin"
+        />
+
+</RelativeLayout>

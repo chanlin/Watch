@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="14dp" >
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="上午 14:10"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_msg_time_top_margin"
+        android:layout_marginLeft="@dimen/item_msg_head_side_margin"
+        >
+        <!-- 接收方头像 -->
+        <!-- android:layout_marginLeft="@dimen/item_msg_time_top_margin"-->
+        <RelativeLayout
+            android:id="@+id/rl_user_head"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:scaleType="fitXY"
+            >
+            <com.jajale.watch.cviews.RoundedImageView
+                android:id="@+id/nriv_userhead"
+                android:layout_width="@dimen/size_avatar"
+                android:layout_height="@dimen/size_avatar"
+                app:corner_radius="90dip"
+                app:border_width="1px"
+                app:border_color="@color/white"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sys_location_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_user_head"
+            android:layout_marginLeft="@dimen/item_msg_head_content_size"
+            android:background="@drawable/selector_chat_from_item_bg"
+            android:gravity="left|center"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/iv_right_title_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_msg_content_left_warning_top_margin"
+                android:background="@mipmap/icon_location_warning"
+                />
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_toRightOf="@id/iv_right_title_warning"
+                style="@style/sys_msg_list_item_content_text_style"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:lineSpacingExtra="2dp"
+                android:minHeight="50dp"
+                android:maxWidth="225.0dip"
+                android:text="宝贝1安全区域！请注意宝贝的安全"
+                android:paddingRight="@dimen/item_msg_head_side_margin"
+                android:paddingLeft="@dimen/item_msg_head_content_size"
+                />
+        </RelativeLayout>
+
+
+        <!-- android:id="@+id/tv_chatcontent" -->
+        <!--<TextView-->
+            <!--android:maxWidth="225.0dip"-->
+
+            <!--style="@style/sys_msg_list_item_content_text_style"-->
+            <!--android:layout_marginLeft="@dimen/item_msg_head_content_size"-->
+            <!--android:layout_toRightOf="@id/rl_user_head"-->
+            <!--android:background="@drawable/selector_chat_from_item_bg"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true"-->
+            <!--android:gravity="left|center"-->
+            <!--android:lineSpacingExtra="2dp"-->
+            <!--android:minHeight="50dp"-->
+            <!--android:textColor="#ff000000"-->
+            <!--android:textSize="@dimen/chat_msg_text_size"-->
+            <!--android:text="宝贝1出了安全区域！请注意宝贝的安全"-->
+            <!--android:drawableLeft="@mipmap/icon_location_warning"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:visibility="invisible"-->
+            <!--/>-->
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tv_userid"
+        style="@style/chat_text_name_style"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_msg_between_size"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/rl_sys_location_content"
+        android:layout_below="@id/rl_user_head"
+        android:text=""
+        />
+</LinearLayout>

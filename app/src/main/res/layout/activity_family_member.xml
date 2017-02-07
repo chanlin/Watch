@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <TextView
+
+        style="@style/info_textview_left"
+        android:layout_marginTop="10dp"
+        android:text="@string/family_member_baby_text"
+        />
+
+    <include
+        android:id="@+id/family_member_baby_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/listview_item_family_member"
+        android:layout_marginTop="@dimen/ten_margin"/>
+    <TextView
+        style="@style/info_textview_left"
+        android:layout_marginTop="@dimen/ten_margin"
+        android:text="@string/family_member_parents_text"
+        />
+
+    <ListView
+        android:id="@+id/family_member_lv_content"
+        android:layout_marginTop="@dimen/ten_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="false"
+        android:divider="@color/white"
+        android:scrollbars="none"
+
+        android:listSelector="@android:color/transparent"
+        />
+
+
+
+
+</LinearLayout>

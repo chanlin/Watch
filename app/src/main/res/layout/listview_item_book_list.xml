@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@color/transparent">
+
+
+        <ImageView
+            android:id="@+id/book_iv"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/book_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_tv_name"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语文"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/book_tv_author"
+                style="@style/gray_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="作者：XXX"
+            android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/book_tv_brief"
+                style="@style/gray_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:text="介绍介绍介绍介绍15456464646介绍"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

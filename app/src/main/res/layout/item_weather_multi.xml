@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/transparent"
+    >
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text_color"
+            android:textSize="15sp"
+            android:text="aaaa"
+            />
+
+    <TextView
+        android:id="@+id/city_tv"
+        android:layout_below="@id/name_tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_text_color"
+        android:text="beijing"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/weather_iv_small"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@id/name_tv"
+        />
+    <TextView
+        android:id="@+id/weather_tv_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp"
+        android:text="加载中..."
+        android:layout_alignBaseline="@+id/city_tv"
+        android:layout_alignBottom="@+id/city_tv"
+        android:layout_alignRight="@+id/weather_iv_small"
+        android:layout_alignEnd="@+id/weather_iv_small" />
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/weather_tv_s"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_setting_about"
+        />
+
+
+
+
+ 
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+
+    >
+    <!-- android:background="@color/health_chart_standard"-->
+
+    <ImageView
+        android:id="@+id/head_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/icon_push_back" />
+
+    <LinearLayout
+        android:id="@+id/ll_customer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+        <!--
+                <ImageView
+                    android:id="@+id/last_music"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/msg_state_fail_resend_pressed" />
+
+                <ImageView
+                    android:id="@+id/paly_pause_music"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/voice_unread" />
+
+                <ImageView
+                    android:id="@+id/next_music"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/delete_expression" />-->
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/login_edittext_hint_color"
+            android:textSize="12.0sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

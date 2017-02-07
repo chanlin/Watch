@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/location_mode_select_rl_low"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/button_left_margin"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/black_textview"
+                    android:text="@string/location_mode_low" />
+                <TextView
+                    style="@style/gray_textview"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/location_mode_explain_low" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/location_mode_select_state_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_right_margin"
+                />
+        </RelativeLayout>
+
+        <View style="@style/info_line_toleft" />
+
+        <RelativeLayout
+            android:id="@+id/location_mode_select_rl_mid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/button_left_margin"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/black_textview"
+                    android:text="@string/location_mode_mid" />
+                <TextView
+                    style="@style/gray_textview"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/location_mode_explain_mid" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/location_mode_select_state_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_right_margin"
+                />
+        </RelativeLayout>
+        <View style="@style/info_line_toleft" />
+        <RelativeLayout
+            android:id="@+id/location_mode_select_rl_high"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_item_height"
+            android:background="@drawable/item_selector">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/button_left_margin"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/black_textview"
+                    android:text="@string/location_mode_high" />
+                <TextView
+                    style="@style/gray_textview"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/location_mode_explain_high" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/location_mode_select_state_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/button_right_margin"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/watch_tools_item_height"
+       android:background="@drawable/item_selector">
+
+
+       <ImageView
+           android:id="@+id/watch_tools_iv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/button_left_margin"/>
+
+       <TextView
+           android:id="@+id/watch_tools_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black_text_color"
+           android:textSize="15sp"
+           android:layout_toRightOf="@+id/watch_tools_iv"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="15dp"/>
+
+
+       <ImageView
+           android:id="@+id/watch_tools_tonext"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/tonext_img"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+
+           android:layout_marginRight="@dimen/button_right_margin"/>
+       <ImageView
+           android:id="@+id/watch_tools_iv_barrery_grade"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/battery_one"
+           android:layout_toLeftOf="@+id/watch_tools_tonext"
+           android:layout_centerVertical="true"
+           android:visibility="invisible"
+           android:layout_marginRight="@dimen/button_right_margin"
+           />
+
+       <ImageView
+           android:id="@+id/pedometer_checkbox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10dp"
+           android:button="@null"
+           android:visibility="gone"
+           android:enabled="true" />
+
+   </RelativeLayout>
+
+</LinearLayout>

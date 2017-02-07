@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="@dimen/dialog_min_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_button_white_normal"
+        android:minWidth="@dimen/dialog_min_width"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/line_color" />
+
+
+        <ProgressBar
+            android:id="@+id/dialog_download_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/webview_progress_bar_bg" />
+
+        <TextView
+            android:id="@+id/dialog_download_tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/gray_textview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

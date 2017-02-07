@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <!--<include-->
+    <!--android:id="@+id/title"-->
+    <!--layout="@layout/layout_common_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/homepage_top_margin"
+
+        android:src="@mipmap/logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/button_left_margin"
+        android:layout_marginRight="@dimen/button_right_margin"
+        android:background="@drawable/shape_edit_text_white_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/homepage_edit_phone"
+            style="@style/my_common_edittext"
+            android:hint="@string/input_phone_number"
+            android:inputType="number"
+            android:maxLength="11">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/homepage_iv_deletephone"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/edit_delete_img"
+            android:visibility="gone"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/homepage_btn_add_jiajiale"
+        style="@style/my_common_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/homepage_button_text" />
+
+
+</LinearLayout>

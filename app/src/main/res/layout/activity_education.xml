@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reader_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height" />
+<!--    <include
+        android:id="@+id/layout_no_network"
+        layout="@layout/layout_no_network"
+        />-->
+  <!--  <ListView
+        android:id="@+id/book_lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:fastScrollEnabled="false"
+        android:listSelector="@android:color/transparent"
+
+        android:scrollbars="none" />-->
+
+    <GridView
+        android:id="@+id/book_lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:numColumns="3"
+        android:horizontalSpacing="40dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        >
+
+
+    </GridView>
+</LinearLayout>

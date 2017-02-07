@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <RelativeLayout
+        android:id="@+id/history_track_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_bg">
+
+        <Button
+            android:id="@+id/history_track_btn_front"
+            android:layout_width="64dp"
+            android:layout_height="29dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:background="@drawable/my_round_text_blue"
+            android:text="@string/befor"
+            android:textColor="@color/green_normal_color"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/history_track_ll_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/history_track_tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today"
+                android:textSize="16sp"
+                android:textColor="@color/green_normal_color"
+                />
+            <ImageView
+                android:id="@+id/history_track_iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/history_track_arrow_down"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/history_track_btn_behind"
+            android:layout_width="64dp"
+            android:layout_height="29dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ten_margin"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/my_round_text_blue"
+            android:text="@string/after"
+            android:textColor="@color/green_normal_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.amap.api.maps.MapView>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/app_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/history_track_btn_play"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/history_track_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/gray_textview"
+                android:textSize="13sp"
+
+                />
+            <TextView
+                android:id="@+id/history_track_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_textview"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/history_track_btn_play"
+            android:layout_width="67.5dp"
+            android:layout_height="33dp"
+            android:background="@drawable/button_common_on_selector_green"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="@string/history_track_play"/>
+        <TextView
+            android:id="@+id/tv_no_history_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="@string/no_history"
+            android:visibility="gone"
+            android:textColor="@color/red_tab_textcolor"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <RelativeLayout
+        android:id="@+id/vaccine_detail_rl_state"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_item_height"
+        android:background="@drawable/item_selector">
+
+        <TextView
+            style="@style/info_textview_left"
+            android:text="@string/vaccine_detail_state" />
+
+        <TextView
+            android:id="@+id/vaccine_detail_tv_state"
+            style="@style/gray_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/iv2"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_right_margin"
+            android:src="@mipmap/tonext_img" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/vaccine_detail_rl_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_item_height"
+        android:background="@drawable/item_selector">
+        <View style="@style/info_line_toleft" />
+
+        <TextView
+            style="@style/info_textview_left"
+            android:text="@string/vaccine_detail_date" />
+
+        <TextView
+            android:id="@+id/vaccine_detail_tv_date"
+            style="@style/gray_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/iv1"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_right_margin"
+            android:src="@mipmap/tonext_img" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/vaccine_detail_rl_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View style="@style/info_line_toleft" />
+
+        <TextView
+            style="@style/info_textview_left"
+            android:id="@+id/vaccine_detail_tv_describe_front"
+            android:text="@string/vaccine_detail_describe"
+            android:layout_marginTop="26dp"
+            android:drawableLeft="@mipmap/vaccine_introduce_image"
+            android:drawablePadding="6dp"/>
+
+
+        <com.jajale.watch.cviews.JustifyTextView
+            android:id="@+id/vaccine_detail_tv_describe"
+            style="@style/gray_textview"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/vaccine_detail_tv_describe_front"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:lineSpacingMultiplier="1.1"
+            android:text="" />
+
+    </LinearLayout>
+</LinearLayout>

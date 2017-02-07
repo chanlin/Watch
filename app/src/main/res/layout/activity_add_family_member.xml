@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        style="@style/black_textview"
+        android:layout_margin="20dp"
+        android:text="@string/add_family_member_text1"/>
+    <TextView
+        style="@style/black_textview"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:drawableLeft="@mipmap/add_family_member_one"
+        android:drawablePadding="5dp"
+        android:text="@string/add_family_member_text2"/>
+    
+    <ImageView
+        android:id="@+id/code_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        style="@style/black_textview"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@mipmap/add_family_member_two"
+        android:drawablePadding="5dp"
+        android:textSize="15sp"
+        android:text="@string/add_family_member_text3"/>
+    <TextView
+        android:id="@+id/text_imei"
+        style="@style/black_textview"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>

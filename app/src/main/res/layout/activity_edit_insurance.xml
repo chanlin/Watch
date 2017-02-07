@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/insurance_edit_top_msg_height"
+                layout="@layout/layout_insurance_edit_top_msg"
+                />
+
+
+            <TextView
+                style="@style/black_textview"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/app_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/button_left_margin"
+                android:text="@string/edit_insurance_text_parent_info" />
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/info_item_height"-->
+                <!--android:background="@drawable/item_selector"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+
+                    <!--style="@style/info_textview_left"-->
+                    <!--android:text="您与宝贝的关系" />-->
+
+                <!--<RadioGroup-->
+                    <!--android:id="@+id/radioGroup_meitianjiancha"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="160dp"-->
+                    <!--android:layout_centerVertical="true"-->
+
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/radio_father"-->
+                        <!--style="@style/my_common_raidobutton"-->
+                        <!--android:checked="true"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:text="爸爸" />-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/radio_mother"-->
+                        <!--style="@style/my_common_raidobutton"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:text="妈妈" />-->
+                <!--</RadioGroup>-->
+
+            <!--</RelativeLayout>-->
+
+            <include
+                android:id="@+id/layout_two_choosen_parent"
+                layout="@layout/layout_two_choosen"/>
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_name"
+                layout="@layout/layout_edit_insurance" />
+
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/layout_two_choosen_gender"
+                layout="@layout/layout_two_choosen"/>
+
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/edit_insurance_layout_birthday"
+                layout="@layout/layout_edit_insurance_address" />
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_id_type"
+                layout="@layout/layout_edit_insurance_address" />
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/edit_insurance_layout_idcard"
+                layout="@layout/layout_edit_insurance" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_phone"
+                layout="@layout/layout_edit_insurance" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_phone_sec"
+                layout="@layout/layout_edit_insurance" />
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/edit_insurance_layout_email"
+                layout="@layout/layout_edit_insurance" />
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/edit_insurance_layout_city"
+                layout="@layout/layout_edit_insurance_address" />
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/edit_insurance_layout_street"
+                layout="@layout/layout_edit_insurance" />
+            <View style="@style/info_line_toleft" />
+            <include
+                android:id="@+id/edit_insurance_layout_door"
+                layout="@layout/layout_edit_insurance" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/app_bg">
+                <TextView
+                    style="@style/black_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/button_left_margin"
+                    android:text="@string/edit_insurance_text_baby_info" />
+                <TextView
+                    style="@style/gray_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/button_left_margin"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/edit_insurance_text_baby_info2" />
+            </RelativeLayout>
+
+
+
+            <include
+                android:id="@+id/edit_insurance_layout_baby_name"
+                layout="@layout/layout_edit_insurance" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_baby_gender"
+                layout="@layout/layout_two_choosen" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_baby_birthday"
+                layout="@layout/layout_edit_insurance_address" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_baby_id_type"
+                layout="@layout/layout_edit_insurance_address" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_baby_id_no"
+                layout="@layout/layout_edit_insurance" />
+
+            <View style="@style/info_line_toleft" />
+
+            <include
+                android:id="@+id/edit_insurance_layout_baby_current_city"
+                layout="@layout/layout_edit_insurance_address" />
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:background="@drawable/item_selector">-->
+
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/edit_insurance_tv"-->
+                    <!--style="@style/info_textview_left"-->
+                    <!--android:layout_toRightOf="@+id/dear_iv_head"-->
+                    <!--android:text="现居城市"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_insurance_baby_city_tv"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="请选择宝贝所在城市"-->
+                    <!--android:layout_marginLeft="160dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:textSize="@dimen/info_right_text_size"-->
+                    <!--android:textColor="@color/gray_text_color"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg"
+                android:paddingBottom="15dp">
+
+                <Button
+                    android:id="@+id/insurance_btn_next"
+                    style="@style/my_common_on_button"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/edit_insurance_button_text" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/zone_radius" />
+            <SeekBar
+                android:id="@+id/safe_fence_sb_radius"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:maxHeight="2dp"
+                android:progress="0"
+                android:thumb="@mipmap/seekbar_thumb" />
+            <TextView
+                android:id="@+id/safe_fence_tv_radius"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/zone_name" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical">
+                <EditText
+                    android:id="@+id/safe_fence_rt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/enter_name_home_school"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+            style="@style/black_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/geographic_position" />
+            <TextView
+                android:id="@+id/safe_fence_tv_address"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.amap.api.maps.MapView>
+
+    <Button
+        android:id="@+id/safe_fence_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/button_common_match_selector"
+        android:text="@string/save_area"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

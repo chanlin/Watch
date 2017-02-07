@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_indicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="体重(kg)" />
+
+        <TextView
+            android:id="@+id/tv_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:text="我的" />
+
+
+        <TextView
+            android:id="@+id/tv_my_color"
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_my"
+            android:background="@drawable/shape_health_chart_my" />
+
+
+        <TextView
+            android:id="@+id/tv_lower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@+id/tv_my_color"
+            android:text="偏低" />
+
+
+        <TextView
+            android:id="@+id/tv_lower_color"
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_lower"
+            android:background="@drawable/shape_health_chart_lower" />
+
+
+        <TextView
+            android:id="@+id/tv_uper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_lower_color"
+            android:text="偏高" />
+
+
+        <TextView
+            android:id="@+id/tv_uper_color"
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_uper"
+            android:background="@drawable/shape_health_chart_uper" />
+
+        <TextView
+            android:id="@+id/tv_standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_uper_color"
+            android:text="正常" />
+
+        <TextView
+            android:id="@+id/tv_standard_color"
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_standard"
+            android:background="@drawable/shape_health_chart_standard" />
+    </RelativeLayout>
+
+
+    <com.jajale.watch.thirdpart.linechare.LineChartView
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+</LinearLayout>

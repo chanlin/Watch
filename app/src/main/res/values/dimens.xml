@@ -1,0 +1,161 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="common_title_middle_text_size">18sp</dimen>
+    <dimen name="common_title_height">48dp</dimen>
+
+
+    <dimen name="button_right_margin">10dp</dimen>
+    <dimen name="button_left_margin">10dp</dimen>
+    <dimen name="button_height_new">56dp</dimen>
+    <dimen name="homepage_top_margin">155.5dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_height_dialog">35dp</dimen>
+    <dimen name="edit_left_padding">10dp</dimen>
+    <dimen name="edit_right_padding">10dp</dimen>
+
+    <dimen name="edit_middle_text_size">16sp</dimen>
+    <dimen name="button_middle_text_size">16sp</dimen>
+    <dimen name="system_setting_item_text_size">15sp</dimen>
+    <dimen name="sms_code_width">87dp</dimen>
+    <dimen name="ten_margin">10dp</dimen>
+    <dimen name="bind_top_margin">15dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="line_width">0.5dp</dimen>
+    <dimen name="info_item_height">56dp</dimen>
+    <dimen name="info_left_text_size">17sp</dimen>
+    <dimen name="info_right_text_size">14sp</dimen>
+    <dimen name="bottom_heith">80dp</dimen>
+    <dimen name="map_bottom_heith">70dp</dimen>
+    <dimen name="head_image_width">40dp</dimen>
+
+    <dimen name="small_button_width">55dp</dimen>
+    <dimen name="small_button_heith">25dp</dimen>
+
+    <dimen name="picker_selector_title_high">40dp</dimen>
+    <dimen name="birthday_picker_selector_title_high">30dp</dimen>
+    <dimen name="size_either_btn">80dp</dimen>
+    <dimen name="baby_info_height">60dp</dimen>
+    <dimen name="baby_info_list_item_height">15dp</dimen>
+    <dimen name="watch_tools_item_height">45dp</dimen>
+    <dimen name="shape_radius">6dip</dimen>
+
+    <!--<dimen name="item_msg_center_msg_contents_text_size">14sp</dimen>-->
+    <dimen name="item_msg_center_head_size">48dp</dimen>
+    <dimen name="item_msg_center_side_margin">14dp</dimen>
+    <dimen name="item_msg_center_head_right_margin">12dp</dimen>
+    <dimen name="item_msg_center_height">60dp</dimen>
+    <dimen name="item_msg_center_nickname_top_margin">10dp</dimen>
+    <dimen name="item_msg_center_msg_count_bottom_margin">10dp</dimen>
+    <!--dialog-->
+    <dimen name="dialog_update_min_width">320dp</dimen>
+    <dimen name="dialog_min_width">280dp</dimen>
+    <dimen name="dialog_min_height">210dp</dimen>
+    <dimen name="dialog_title_height">49dp</dimen>
+    <dimen name="dialog_button_height">45dp</dimen>
+    <dimen name="system_setting_item_height">45dp</dimen>
+    <dimen name="dialog_edit_height">41dp</dimen>
+    <dimen name="dialog_title_text_size">19sp</dimen>
+    <dimen name="dialog_button_text_size">17sp</dimen>
+    <dimen name="dialog_content_text_size">14sp</dimen>
+    <dimen name="dialog_content2_text_size">15sp</dimen>
+    <dimen name="dialog_content_warn_text_size">14sp</dimen>
+    <dimen name="item_msg_time_top_margin">14dp</dimen>
+    <dimen name="item_msg_head_side_margin">12dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="chat_msg_text_size">15sp</dimen>
+    <dimen name="item_msg_head_content_size">10dp</dimen>
+    <dimen name="item_msg_content_top_margin">4dp</dimen>
+
+    <dimen name="item_msg_between_size">28dp</dimen>
+    <dimen name="item_msg_content_left_warning_top_margin">6dp</dimen>
+
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="chat_head_side_margin">15dp</dimen>
+
+    <dimen name="msg_status_size">26dp</dimen>
+    <dimen name="msg_status_size_half">13dp</dimen>
+    <dimen name="msg_status_size_margin">-13dp</dimen>
+    <dimen name="msg_status_top_margin">17dp</dimen>
+    <dimen name="chat_msg_control_bar_height">57dp</dimen>
+    <dimen name="chat_msg_control_btn_height">39dp</dimen>
+    <dimen name="chat_msg_control_btn_side_margin">10dp</dimen>
+    <dimen name="chat_msg_control_send_btn_left_margin">8dp</dimen>
+    <dimen name="chat_msg_control_send_btn_width">72dp</dimen>
+    <dimen name="chat_msg_voice_btn_text_size">15sp</dimen>
+
+    <dimen name="item_chat_fragment_dot_right_margin">14dp</dimen>
+    <dimen name="item_chat_fragment_dot_bottom_margin">10dp</dimen>
+    <dimen name="item_chat_fragment_height">60dp</dimen>
+
+    <dimen name="insurance_complete_top_margin">20dp</dimen>
+    <dimen name="insurance_complete_icon_bottom_margin">15dp</dimen>
+    <dimen name="insurance_complete_describe_second_top_margin">30dp</dimen>
+    <dimen name="insurance_complete_describe_second_bottom_margin">10dp</dimen>
+    <dimen name="insurance_complete_describe_thrid_bottom_margin">10dp</dimen>
+
+    <!-- city dialog-->
+    <dimen name="regist_dialog_title_high">30dp</dimen>
+    <dimen name="regist_age_picker_selector_title_high">45dp</dimen>
+
+    <dimen name="insert_picture_dialog_tv_size">15sp</dimen>
+
+    <dimen name="telephone_title_left_margin">15dp</dimen>
+
+    <dimen name="item_ad_side_margin">10dp</dimen>
+    <dimen name="item_ad_pic_width">95dp</dimen>
+    <dimen name="item_ad_pic_height">80dp</dimen>
+
+    <dimen name="footer_padding">10dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+
+    <dimen name="msg_frag_head_icon_size">44dp</dimen>
+    <dimen name="insurance_edit_top_msg_height">50dp</dimen>
+    <dimen name="edit_top_margin">392dp</dimen>
+
+    <dimen name="watch_tools_item_height_new">100dp</dimen>
+    <dimen name="watch_tools_item_width_new">93dp</dimen>
+
+    <!-- skittle-->
+    <dimen name="fab_margin_right">0.1dp</dimen>
+    <dimen name="fab_margin_bottom">0.1dp</dimen>
+    <dimen name="fab_mini_margin_bottom">8dp</dimen>
+
+    <dimen name="mini_fab_margin">8dp</dimen>
+    <dimen name="skittle_title_margin_right">70dp</dimen>
+    <dimen name="skittle_title_margin_bottom">0dp</dimen>
+
+    <dimen name="text_skittle_padding">5dp</dimen>
+    <dimen name="text_skittle_text_size">14sp</dimen>
+    <dimen name="skittle_margin_top">10dp</dimen>
+
+    <dimen name="skittle_size">56dp</dimen>
+    <dimen name="skittle_mini_size">40dp</dimen>
+    <dimen name="recycler_view_width">1500dp</dimen>
+
+    <dimen name="pop_menu_step">30dp</dimen>
+
+
+    <dimen name="login_btn_margin_top">29dp</dimen>
+    <dimen name="icon_portrait_margin_left">22dp</dimen>
+    <dimen name="icon_login_bg_margin_top">80dp</dimen>
+    <dimen name="divider_margin">12dp</dimen>
+    <dimen name="delete_margin">19dp</dimen>
+    <dimen name="call_item_margin_bottom">7dp</dimen>
+    <dimen name="dialog_button_margin_top">18dp</dimen>
+    <dimen name="rocket_rl_width">180dp</dimen>
+    <dimen name="update_rl_margin_bottom">20dp</dimen>
+    <dimen name="update_btn_height">45dp</dimen>
+
+    <dimen name="image2city">49dp</dimen>
+    <dimen name="cityll2top">34.5dp</dimen>
+    <dimen name="infoll2iv">40dp</dimen>
+    <dimen name="tem2dis">13dp</dimen>
+    <dimen name="detail_text_size">13sp</dimen>
+    <dimen name="detail_margin_top">23dp</dimen>
+    <dimen name="detail_margin_bottom">23dp</dimen>
+
+</resources>

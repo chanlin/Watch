@@ -1,0 +1,151 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jajale.watch.fragment.Location2Fragment">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/infowindow_contener"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"></FrameLayout>
+
+        <ImageView
+            android:id="@+id/location_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/location_phone_icon_on" />
+
+
+        <Button
+            android:id="@+id/iv_to_ui_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/ui_setting_btn" />
+
+        <Button
+            android:id="@+id/iv_to_save_fence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_safe_fence_selector" />
+
+        <Button
+            android:id="@+id/iv_to_history_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_history_track_selector" />
+
+        <Button
+            android:id="@+id/map_monitor_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/monitor_btn_icon" />
+
+        <Button
+            android:id="@+id/map_photo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/photo_btn_icon" />
+
+        <Button
+            android:id="@+id/map_menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/location_menu_off" />
+
+
+        <Button
+            android:id="@+id/map_location_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_amap_location_btn" />
+
+        <Button
+            android:id="@+id/map_call_phone_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/map_menu_btn"
+            android:background="@drawable/selector_amap_call_btn" />
+
+
+        <View
+            android:id="@+id/location_progress_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/map_location_btn"
+            android:layout_alignTop="@id/map_location_btn"
+            android:background="@mipmap/location_progress"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/location_no_data_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#90ff5454"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="无法获取到手表的定位信息，请确认手表开机和网络状况良好"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        />
+
+    <include
+        android:id="@+id/layout_no_network"
+        layout="@layout/layout_no_network"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/safe_fence_lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/line_color"
+            android:dividerHeight="@dimen/line_height"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/safe_fence_ll_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/safe_fence_iv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/safe_fence_nodata" />
+
+            <TextView
+                android:id="@+id/safe_fence_tv_no_data_set"
+                style="@style/black_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/save_fence_set" />
+
+            <TextView
+                android:id="@+id/safe_fence_tv_no_data_hint"
+                style="@style/gray_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/save_fence_hint" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

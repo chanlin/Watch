@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ImageView
+        android:id="@+id/child_qa_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/icon_childqa"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_text_color"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/child_qa_iv"
+        android:lineSpacingExtra="9dp"
+        android:text="@string/child_qa__describe"
+        />
+    <TextView
+        android:layout_below="@id/info_tv"
+        android:id="@+id/text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/qa_level_choice"
+        android:textColor="@color/black_text_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/pre_school_btn"
+        android:layout_below="@id/text_tv"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/pre_school"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/button_navigation_selector"
+        />
+    <Button
+        android:id="@+id/post_school_btn"
+        android:layout_below="@id/pre_school_btn"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:text="@string/post_school"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/button_common_on_selector"
+        />
+</RelativeLayout>

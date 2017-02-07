@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    >
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/insurance_complete_top_margin"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_insurance_complete"
+        android:layout_marginTop="@dimen/insurance_complete_top_margin"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insurance_complete_title"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/insurance_complete_icon_bottom_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insurance_complete_date_des_top"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/gray_text_color"
+        android:layout_marginTop="@dimen/insurance_complete_icon_bottom_margin"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insurance_complete_date_des_bottom"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/gray_text_color"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insurance_content_t_1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance_complete_title_dadi_link_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance_complete_dadi_link_content"
+            android:textColor="@color/app_color"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!-->-->
+            <TextView
+                android:id="@+id/tv_insu_complete_sick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《大地个人重大疾病保险条款》"
+                />
+            <!--<TextView-->
+                <!--android:id="@+id/tv_insu_complete_accident"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="《大地个人意外伤害保险条款》"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_insu_complete_add"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="《附加重大疾病特约保险条款》"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_insu_complete_death"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="《附加意外身故特约保险条款》"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/insurance_complete_describe_second_bottom_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance_complete_report_title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_report_by_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance_complete_report_number"
+            android:textColor="@color/dot_bg_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_web_dadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insurance_complete_title_dadi"
+        android:textColor="@color/app_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/insurance_complete_describe_thrid_bottom_margin"
+        android:layout_gravity="center"
+
+        />
+
+    <!--android:background="@color/app_color"-->
+    <!--android:text="<<常见问题>>"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_ques_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/app_color"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

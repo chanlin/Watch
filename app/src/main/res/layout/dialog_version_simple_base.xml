@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minWidth="@dimen/dialog_update_min_width"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_marginBottom="@dimen/update_rl_margin_bottom"
+            android:layout_width="@dimen/dialog_update_min_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@mipmap/uplate_dialog_bg"
+            android:minWidth="@dimen/dialog_update_min_width"
+            android:orientation="vertical">
+            />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+
+                <TextView
+                    android:id="@+id/dialog_body_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="left"
+                    android:textColor="@color/dialog_content_color"
+                    android:textSize="@dimen/dialog_content_text_size" />
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dip"
+            android:src="@mipmap/update_dialog_dismis" />
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="@dimen/rocket_rl_width"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/dialog_rocket" />
+
+            <TextView
+                android:id="@id/tv_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/dialog_text_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="V1.2.30"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/update_btn_height"
+            android:layout_alignBottom="@id/layout"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1.0"
+            android:background="@mipmap/update_now_bg"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="马上更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_button_text_size" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

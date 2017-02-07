@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/album_item_ll"
+        android:background="@drawable/kan_track_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/album_cover_bg"
+             />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="124564"
+                android:textColor="@color/reai_title_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_centerVertical="true"
+                android:id="@+id/describe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="124564"
+                android:textColor="@color/black_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/all_set_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="124564"
+                android:textColor="@color/gray_text_color"
+                android:textSize="11sp" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_right_image"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+<!--    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="40dp"
+    android:background="@drawable/dotted_line_gray"
+    android:layerType="software" />-->
+  <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+</LinearLayout>

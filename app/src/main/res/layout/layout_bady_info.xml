@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baby_info_height"
+        android:background="@drawable/item_selector">
+
+
+        <ImageView
+            android:id="@+id/dear_iv_head"
+            android:layout_width="@dimen/head_image_width"
+            android:layout_height="@dimen/head_image_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/button_left_margin"
+            android:src="@mipmap/head_image_boy" />
+
+        <TextView
+            android:id="@+id/dear_tv_name"
+            style="@style/info_textview_left"
+            android:layout_toRightOf="@+id/dear_iv_head"
+            android:text="baby" />
+
+
+        <ImageView
+            android:id="@+id/dear_iv_tonext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_right_margin"
+            android:src="@mipmap/tonext_img" />
+
+        <ImageView
+            android:id="@+id/dear_iv_barrery_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/button_right_margin"
+            android:layout_toLeftOf="@+id/dear_iv_tonext"
+            android:src="@mipmap/battery_one"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

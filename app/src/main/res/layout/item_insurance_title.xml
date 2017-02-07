@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+    >
+
+    <TextView
+        android:id="@+id/tv_insurance_title_left"
+        style="@style/insurance_title_left_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="@dimen/chat_head_side_margin"
+        android:layout_marginBottom="@dimen/chat_head_side_margin"
+
+        android:paddingLeft="@dimen/button_left_margin"
+        android:text="@string/edit_insurance_text_parent_info"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_insurance_title_right"
+        style="@style/insurance_title_right_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/button_left_margin"
+        android:text=""
+        />
+
+
+</RelativeLayout>
